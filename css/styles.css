@@ -1,0 +1,43 @@
+.bg-red {background-color: red;}
+.bg-green {background-color:rgb(130, 245, 145) ;}
+.bg-blue {background-color: blue;}
+.bg-yellow {background-color: yellow;}
+.bg-pink {background-color: pink;}
+
+/* icons */
+@font-face {
+  /*font-family: IcoMoon;*/
+  src:url(icomoon\fonts\icomoon.ttf);
+}
+
+* {box-sizing: border-box;}
+
+.icon-search{
+  font-size: 2em;
+  float: right;
+  padding-top: 10px;
+}
+
+.navbar-toggle {float: left;
+margin-left: 20px;}
+
+.carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     width: 95%;
+     /*max-width: 460px;*/
+     height: 350px;
+     margin: auto;
+     border: chartreuse solid 1px;
+ }
+
+ .top-box img {
+   width: 98%;
+   height: 150px;
+    border: black 1px solid;
+ }
+
+ .top-box {
+
+   /*margin: 10px;*/
+   padding: 10px;
+ }
