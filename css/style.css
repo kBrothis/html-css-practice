@@ -1,0 +1,112 @@
+body{
+  /*background-image: url('../img/hahaha.png');
+  background-repeat: repeat;
+  background-position: center center;*/
+  background-color: #d7d7d7;
+}
+
+ul{
+  padding: 0;
+}
+
+img{
+  width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.container{
+  width: 80%;
+  min-width: 1170px;
+  padding: 0;
+}
+
+.padding-cols{
+  padding: 0;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  background-color: #dddddd;
+  border: 1px solid #bebebe;
+  padding: 2em 0;
+}
+
+nav li{
+  width: 19.6%;
+  display: inline-block;
+  text-align: center
+}
+
+.social-nav li{
+  display: inline-block;
+  width: 16.06%;
+}
+
+.logo{
+  background-image: url('https://www.photohdx.com/images/2016/03/yellow-vintage-wrinkled-paper-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero{
+  background-color: #f2f2f2;
+}
+
+.logo-title{
+  margin-top: 77px;
+}
+
+.hero-img{
+  padding: 0;
+  background-image: url("../img/joker-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 480px;
+}
+
+.hero-article{
+  color: white;
+  margin-top: 30px;
+}
+
+.hero-article button{
+  margin-top:20px;
+  background-color: #0ce358;
+  border: 0;
+  height: 40px;
+}
+
+.btn-links{
+  margin: 45px 0;
+  padding: 0;
+}
+
+.btn-image:first-child{
+  padding-right: 20px;
+}
+
+.btn-image:nth-child(2){
+  padding: 0 20px;
+}
+
+.btn-image:last-child{
+  padding-left: 20px;
+}
+
+.smile, .laugh, .batman{
+  background-image: url('https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/n7llwa5jsaua6u4dgw31/you-wanna-know-how-he-got-those-scars-here-are-7-of-the-joker-s-many-origin-stories.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 300px;
+}
