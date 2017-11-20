@@ -1,3 +1,14 @@
+/*generics*/
+
+
+body
+{
+	background-image: url("../images/background-white.jpeg");
+	background-color: blue; /*this is so it will be obvious if it shows up*/
+	font-family: 'Vollkorn SC', serif;
+}
+
+
 ul
 {
 	list-style-type: none;
@@ -8,4 +19,168 @@ ul
 li
 {
 	display: inline;
+}
+
+
+
+
+/*navbar*/
+/*still need to figure out how to make it go across the entire top*/
+nav
+{
+	width:100%;
+	background-color: white;
+	height: 5em;
+	margin: 1em 0;
+	border-top: 2px solid lightgrey;
+	border-bottom: 2px solid lightgrey;
+	font-size: 1em;
+	font-weight: lighter;
+}
+
+nav a
+{
+	top:40%;
+	color: grey;
+}
+
+nav ul
+{
+	top: 40%;
+	text-align: center;
+}
+
+nav ul li
+{
+	margin-right: 1em;
+}
+
+.hamburger
+{
+	border-right: 1px dotted lightgrey;
+	text-align: right;
+}
+
+.icon-circle-down
+{
+	font-size: 65%;
+}
+
+.top-search
+{
+	border-left: 1px dotted lightgrey;
+	text-align: left;
+}
+
+/*header*/
+header
+{
+	text-align: center;
+	
+	padding: 1em;
+	font-family: 'Tangerine', cursive;
+}
+
+header ul li
+{
+	margin-right: 0.5em;
+	color: grey;
+}
+
+header h3
+{
+	font-family: 'Cookie', cursive;
+	font-size: 150%;
+	color: black;
+	display: inline-block;
+	font-style: italic;
+}
+
+header hr
+{
+	display: inline-block;
+	color: green;
+	margin: 0;
+	border-width: 1px;
+	border-style: solid;
+	width: 30%;
+	padding: 0;
+}
+
+header h1
+{
+	font-size: 400%;
+	font-weight: bold;
+	margin-right: 1.05em;
+}
+
+/*carousel*/
+.carousel
+{
+	margin: 0;
+	position: relative;
+	height: 610px;
+	color: lightgrey;
+	/*background-color: rgba(188, 200, 219, 0.5);
+	border-radius: 2px;*/
+	text-shadow: 0 0 1px black;
+}
+
+.carousel img
+{
+	position: absolute;
+	z-index: 10;
+	margin-left:-1180px;
+
+}
+/*.button-box
+{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border: 2px solid grey;
+	z-index: 20;
+}*/
+.carousel .icon-circle-left, .icon-circle-right
+{
+	position: absolute;
+	font-size: 400%;
+	height: 600px;
+	padding: 5px;
+	z-index: 20;
+}
+
+/*.carousel-text
+{
+	position: absolute;
+	z-index: 20;
+	margin-top: 300px;
+	color: black;
+	text-align: center;
+}*/
+.carousel h2
+{
+	position: absolute;
+	margin-top: 220px;
+	text-align: right;
+	z-index: 20;
+	font-size: 300%;
+}
+
+.carousel p
+{
+	position: absolute;
+	z-index: 20;
+	margin-top: 300px;
+}
+
+.carousel button
+{
+	position: absolute;
+	z-index: 20;
+	margin-top: 350px;
+	text-align: center;
+	background-color: green;
+	font-size: 200%;
+	text-shadow: none;
 }

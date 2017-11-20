@@ -4,6 +4,11 @@
 <head>
 	<meta charset="utf-8">
     <title>HTML CSS Assignment</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Source+Sans+Pro|Tangerine" rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -92,13 +97,17 @@
 	<div class="container" id="top">
 	 	<!-- navigation bar -->
 	 	<nav class="row">
-			<a class="col-md-offset-1 col-md-1" href="javascript:void(0);"><svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg></a>
-			<a class="col-md-offset-1 col-md-1" href="javascript:void(0);">Main</a>
-			<a class="col-md-1" href="javascript:void(0);">Demos</a>
-			<a class="col-md-1" href="javascript:void(0);">Portfolio</a>
-			<a class="col-md-1" href="javascript:void(0);">Blog</a>
-			<a class="col-md-1" href="javascript:void(0);">Shortcodes</a>
-			<a class="col-md-offset-1 col-md-2" href="javascript:void(0);"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></a>
+			<a class="col-md-offset-1 col-md-1 hamburger" href="javascript:void(0);"><svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg></a>
+
+			<ul class="col-md-8">
+				<li><a href="javascript:void(0);">Main <svg class="icon icon-circle-down"><use xlink:href="#icon-circle-down"></use></svg></a></li>
+				<li><a href="javascript:void(0);">Demos</a></li>
+				<li><a href="javascript:void(0);">Portfolio</a></li>
+				<li><a href="javascript:void(0);">Blog</a></li>
+				<li><a href="javascript:void(0);">Shortcodes</a></li>
+			</ul>
+			
+			<a class="col-md-2 top-search" href="javascript:void(0);"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></a>
 	 	</nav>
 
 	 	<!-- header -->
@@ -112,22 +121,28 @@
 	 			<li><svg class="icon icon-tumblr"><use xlink:href="#icon-tumblr"></use></svg></li>
 	 			<li><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></li>
 	 		</ul>
-	 		<hr> <p>your tagline will go right here</p>
+	 		<ul>
+	 			<li><hr></li>
+	 			<li><h3>Four generations of theatre</h3></li>
+	 			<li><hr></li>
+	 		</ul>
+	 		
 	 		<h1>Alexis Bell</h1>
 	 	</header>
 
 	 	<!-- carousel -->
 	 	<section class="row carousel">
-	 		<img src="">
-	 		<div class="col-md-1"><svg class="icon icon-circle-left"><use xlink:href="#icon-circle-left"></use></svg></div>
+	 		<img src="images/img1.jpg" alt = "cleopatara drinking wine">
+	 		<div class="col-md-1"><div class="button-box"><svg class="icon icon-circle-left"><use xlink:href="#icon-circle-left"></use></svg></div></div>
 
-	 		<div class="col-md-offset-2 col-md-6">
-	 			<h2>Playfair Display</h2>
-	 			<p>Comming from two different cultures. . . </p>
+	 		<div class="col-md-10 carousel-text">
+	 			<h2>Ceasar and Cleopatara</h2>
+	 			<p>a comedy by George Bernard Shaw</p>
 	 			<button>Read More</button>
 	 		</div>
 
-	 		<div class="col-md-1"><svg class="icon icon-circle-right"><use xlink:href="#icon-circle-right"></use></svg></div>
+	 		<div class="col-md-1"><div class="button-box"><svg class="icon icon-circle-right"><use xlink:href="#icon-circle-right"></use></svg></div></div>
+
 	 	</section>
 
 	 	<!-- lifestyle -->
