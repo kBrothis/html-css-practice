@@ -48,3 +48,18 @@
 .icon-pinterest2:before {
   content: "\ead2";
 }
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-circle-up:before {
+  content: "\ea41";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
