@@ -1,0 +1,64 @@
+.navigation-row {
+  background-color: pink;
+}
+
+.hero-row {
+  background-color: lightgray;
+}
+
+.carousel-row {
+  background-color: pink;
+}
+
+.main-body-top {
+  background-color: lightgray;
+}
+
+.subscribe-row {
+  background-color: pink;
+}
+
+.instagram-row {
+  background-color: darkgray;
+}
+
+.footer-row {
+  background-color: pink;
+}
+
+.navigation-left {
+  float: right;
+}
+
+.navigation {
+  text-align: center;
+}
+
+.navigation-right {
+  float: left;
+}
+
+.hero {
+  text-align: center;
+}
+
+.carousel {
+  text-align: center;
+}
+
+.body-container {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.color-purple {
+  background-color: purple;
+}
+
+.color-darkgray {
+  background-color: darkgray;
+}
+
+p {
+  text-align: center;
+}
