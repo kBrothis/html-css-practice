@@ -46,11 +46,17 @@
             <div class="col-md-6">
               <h3>This will be the content of left column with 7 articles</h3><!-- left column w 7 articles/rows-->
 
-              <video width="320" height="240" controls> <!-- example video was a file, not a link -->
+
+              <!-- video with file example
+              <video width="320" height="240" controls>
                 <source src="https://www.youtube.com/watch?v=FiToKVrqZ18" type="video/mp4">
                 <source src="https://www.youtube.com/watch?v=FiToKVrqZ18" type="video/ogg">
                     Your browser does not support the video tag.
-              </video>
+              </video> -->
+              <!--video from youtube -->
+              <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/XGSy3_Czz8k">
+              </iframe>
               <!--carousel code follows-->
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -86,7 +92,24 @@
                 </a>
                 </div><!--carousel code should end here-->
 
-            </div>
+                <div class="articles-border"> <!-- template for the 7 articles-->
+                  <div class=""><!--image top-->
+                    <img src="shelty3.jpg" alt="shelty3" height="100%" width="100%">
+                  </div>
+                  <div class=""> <!--articles-first-buttons-->
+                    <a href="javascript:void(0)" class="button green-white-button">Link Button1</a>
+                    <a href="javascript:void(0)" class="button green-white-button">Link Button2</a>
+                  </div>
+                  <h2 class="articles-title">Title of the article here, centered, justify center, bold</h2>
+                  <p class="articles-text">Text of the article here, centered with picture, all margins on the left are the same</p>
+                  <div class="articles-footer"><!--articles-footer contains: date button, simbols and read more button-->
+                     <button type="button">Button with date</button>
+                     <span>Characters from IcoMoon</span>
+                     <button type="button">read more button</button>
+                  </div>
+                </div><!--end of template 7 articles-->
+
+            </div> <!--end of left column-->
             <div class="col-md-6"><!-- Right column w variety content-->
               <h3>This will be the content of right column with variety</h3>
               <a href="javascript:void(0)" class="button green-white-button">Link Button</a>
