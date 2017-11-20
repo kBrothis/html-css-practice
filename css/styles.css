@@ -6,6 +6,14 @@ body {
   width: 100%;
 }
 
+header h1 {
+  margin: 70px;
+}
+
+header h4 {
+  margin: 30px;
+}
+
 .navbar ul {
   background-color: #fff;
   border-bottom: 1px solid #e5e5e5;
@@ -13,7 +21,7 @@ body {
 
 .jumbotron {
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 .image-links {
@@ -24,10 +32,12 @@ body {
 
 .image-links h4 {
   position: absolute;
-  top: 35%;
-  left: 40%;
+  top: 33%;
+  left: 38%;
   background-color: #fff;
   padding: 20px;
+  height: 30%;
+  width: 30%;
 }
 
 section {
@@ -38,7 +48,7 @@ section {
   box-shadow: 0 2px 2px -2px #a8a8a8;
 }
 
-section h5 {
+.section-title {
   color: #a8a8a8;
   border: 1px solid #e5e5e5;
   padding: 10px;
@@ -50,12 +60,25 @@ section h5 {
   margin-bottom: 20px;
 }
 
+.blog h3 {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.blog p {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
 .blog-post {
   background-color: #ffffff;
 }
 
 .blog-post h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .blog-post p {
@@ -67,9 +90,37 @@ section h5 {
   box-shadow: 0 2px 2px -2px #a8a8a8;
 }
 
+.advert {
+  height: 500px;
+}
+
+.jump-button {
+  background-color: #a8a8a8;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+}
+
 .foot-container {
   width: 100%;
   background-color: #ffffff;
+}
+
+.footer-row-top {
+  height: 200px;
+  padding-top: 50px;
+  padding-left: 100px;
+  box-shadow: 0 -2px 2px -2px #e5e5e5;
+}
+
+.foot-jump {
+  position: relative;
+}
+
+.foot-jump a {
+  position: absolute;
+  left: 150px;
 }
 
 .foot-image img {
