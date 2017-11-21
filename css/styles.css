@@ -1,9 +1,20 @@
-.navigation-row {
-  background-color: pink;
+body {
+  background-image: url("../images/winter_background.png");
+  /*background-blend-mode: lighten;*/
 }
 
 /*Navigation row*/
+
+.navigation-row {
+  background-color: white;
+}
+
+.navCenter {
+  margin-left: 130px;
+}
+
 .navbar {
+  padding: 30px;
   overflow: hidden;
 }
 
@@ -55,11 +66,54 @@ overflow: hidden;
 /*End Navigation row*/
 
 .carousel-row {
-  background-color: pink;
+  background-color: darkgray;
 }
 
-.main-body-top {
+.myCarousel {
+  padding: 220px;
+}
+
+.feature {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.featureBottom {
+  /*margin: 10px;*/
+  padding: 10px;
   background-color: lightgray;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.myButtons {
+  margin-left: 450px;
+}
+
+.ad {
+  margin: 40px;
+  padding: 20px;
+  background-color: white;
+}
+
+.socialMedia {
+  margin-left: 115px;
+  border: solid 2px black;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+}
+
+.adIcon {
+  margin: 10px;
+  float: left;
 }
 
 .subscribe-row {
@@ -93,14 +147,6 @@ overflow: hidden;
 .body-container {
   margin-left: 200px;
   margin-right: 200px;
-}
-
-.color-purple {
-  background-color: purple;
-}
-
-.color-darkgray {
-  background-color: darkgray;
 }
 
 p {
