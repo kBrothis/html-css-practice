@@ -3,9 +3,10 @@
 
 body
 {
-	background-image: url("../images/background-white.jpeg");
-	background-color: blue; /*this is so it will be obvious if it shows up*/
+	background-image: url("../images/background-grey.png");
+	background-color: grey;
 	font-family: 'Vollkorn SC', serif;
+	color: white;
 }
 
 
@@ -21,36 +22,40 @@ li
 	display: inline;
 }
 
+img
+{
+	width: 100%;
+	height: auto;
+}
 
 /*navbar*/
 /*still need to figure out how to make it go across the entire top*/
 nav
 {
-	width:100%;
 	background-color: white;
-	height: 5em;
+	height: 4em;
 	margin: 1em 0;
 	border-top: 2px solid lightgrey;
 	border-bottom: 2px solid lightgrey;
-	font-size: 1em;
+	font-size: 10px;
 	font-weight: lighter;
 }
 
 nav a
 {
-	top:40%;
 	color: grey;
+	margin-top: 1em;
 }
 
 nav ul
 {
-	top: 40%;
 	text-align: center;
+	margin-top: 1em;
 }
 
-nav ul li
+nav .nav-ul
 {
-	margin-right: 1em;
+	padding: 0 -15px;
 }
 
 .hamburger
@@ -61,7 +66,7 @@ nav ul li
 
 .icon-circle-down
 {
-	font-size: 65%;
+	font-size: 40%;
 }
 
 .top-search
@@ -70,11 +75,19 @@ nav ul li
 	text-align: left;
 }
 
+@media (min-width: 768px)
+{
+	nav
+	{
+		font-size: 20px;
+	}
+
+}
+
 /*header*/
 header
 {
 	text-align: center;
-	
 	padding: 1em;
 	font-family: 'Tangerine', cursive;
 }
@@ -88,10 +101,10 @@ header ul li
 header h3
 {
 	font-family: 'Cookie', cursive;
-	font-size: 150%;
-	color: black;
+	font-size: 120%;
 	display: inline-block;
 	font-style: italic;
+	color: white;
 }
 
 header hr
@@ -101,7 +114,7 @@ header hr
 	margin: 0;
 	border-width: 1px;
 	border-style: solid;
-	width: 30%;
+	width: 20%;
 	padding: 0;
 }
 
@@ -109,7 +122,6 @@ header h1
 {
 	font-size: 400%;
 	font-weight: bold;
-	margin-right: 1.05em;
 }
 
 /*carousel*/
@@ -132,13 +144,12 @@ header h1
 .button-box
 {
 	position: absolute;
-	margin-top: 200px;
+	margin-top: 40px;
 	z-index: 20;
 }
 .carousel .icon-circle-left, .icon-circle-right
 {
-	font-size: 400%;
-	padding: 10px;
+	padding: 1px;
 	background-color: grey;
 	border-radius: 5px;
 	text-align: center;
@@ -176,10 +187,72 @@ header h1
 	font-size: 100%;
 	width: 150px;
 	height: 50px;
-	/*padding: 15px 20px 10px;*/
 	color: white;
 	left: 45%;
 	border-radius: 5px;
 	border: 5px solid grey;
-  	/*box-shadow: 5px 5px 0 10px grey;*/
 }
+
+@media (min-width: 768px)
+{
+	.button-box
+	{
+		margin-top: 200px;
+	}
+
+	.carousel .icon-circle-left, .icon-circle-right
+	{
+		font-size: 400%;
+		padding: 10px;
+	}
+
+	.carousel h2
+	{
+		position: absolute;
+		margin-top: 100px;
+		text-align: center;
+		z-index: 20;
+		font-size: 200%;
+		padding: 0 200px;
+		text-shadow: 1px 0 1px black;
+
+	}
+
+	.carousel p
+	{
+		position: absolute;
+		z-index: 20;
+		margin-top: 200px;
+		padding: 0 200px;
+		text-align: center;
+		text-shadow: 1px 0 1px black;
+	}
+
+	.carousel button
+	{
+		position: absolute;
+		z-index: 20;
+		margin-top: 300px;
+		text-align: center;
+		background-color: #22BB66;
+		font-size: 100%;
+		width: 150px;
+		height: 50px;
+		color: white;
+		left: 45%;
+		border-radius: 5px;
+		border: 5px solid grey;
+	}
+}
+
+/*lifestyle*/
+.lifestyle-img
+{
+	height: 230px;
+	width: 31%;
+	overflow: hidden;
+	border: 5px solid white;
+	padding: 0;
+	margin: 0 0 0 20px;
+}
+
