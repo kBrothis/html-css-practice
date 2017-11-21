@@ -6,14 +6,9 @@
   <link rel="stylesheet" href="css\bootstrap.css">
   <link rel="stylesheet" href="css\styles.css">
   <link rel="stylesheet" href="icomoon\style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body class="bg-green">
-
-
+<body>
   <div class="container">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -26,34 +21,36 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Main</a></li>
+            <li class="active"><a href="javascript:void(0);">Main</a></li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Page 1 <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Page 1-1</a></li>
-                <li><a href="#">Page 1-2</a></li>
+                <li><a href="javascript:void(0);">Page 1-1</a></li>
+                <li><a href="javascript:void(0);">Page 1-2</a></li>
               </ul>
             </li>
-            <li><a href="#">Demos</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Shortcodes</a></li>
+            <li><a href="javascript:void(0);">Demos</a></li>
+            <li><a href="javascript:void(0);">Portfolio</a></li>
+            <li><a href="javascript:void(0);">Blog</a></li>
+            <li><a href="javascript:void(0);">Calendar</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <header class="row">
       <div class="col-xs-12 icons">
-        <span class="icon-facebook2"></span>
-        <span class="icon-twitter"></span>
-        <span class="icon-camera"></span>
-        <span class="icon-pinterest2"></span>
-        <span class="icon-google-plus"></span>
-        <span class="icon-test">t</span>
-        <span class="icon-rss"></span>
+        <a href="javascript:void(0);"><span class="icon-facebook-f"></span></a>
+        <a href="javascript:void(0);"><span class="icon-twitter"></span></a>
+        <a href="javascript:void(0);"><span class="icon-camera"></span></a>
+        <a href="javascript:void(0);"><span class="icon-pinterest2"></span></a>
+        <a href="javascript:void(0);"><span class="icon-google-plus"></span></a>
+        <a href="javascript:void(0);"><span class="icon-tumblr"></span></a>
+        <a href="javascript:void(0);"><span class="icon-rss"></span></a>
       </div>
       <div class="col-xs-12 tagline">
-        <p>your tagline goes here</p>
+        <hr class="tag-rule">
+        <span class="tag-rule">art by<br /> david hartman</span>
+        <hr class="tag-rule">
       </div>
       <div class="logo">
         <img src="" alt="">
@@ -73,9 +70,16 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-
             <div class="item active">
-              <img src="resources\img\image1.jpg" alt="" />
+              <img src="resources\img\orion.jpeg" alt="" />
+              <div class="carousel-caption">
+                <p>Lorem ipsum dolor sit amet, id mei nisl sadipscing, nobis noluisse cu eum.</p>
+                <button class="btn-inverse" type="button" name="button">Read More</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="resources\img\miastand_cover.jpg" alt="" />
               <div class="carousel-caption">
 
                 <p>Lorem ipsum dolor sit amet, id mei nisl sadipscing, nobis noluisse cu eum.</p>
@@ -83,31 +87,20 @@
             </div>
 
             <div class="item">
-              <img src="resources\img\image2.jpg" alt="" />
+              <img src="resources\img\sith.jpeg" alt="" />
               <div class="carousel-caption">
-
                 <p>Lorem ipsum dolor sit amet, id mei nisl sadipscing, nobis noluisse cu eum.</p>
               </div>
             </div>
 
             <div class="item">
-              <img src="resources\img\image3.jpg" alt="" />
+              <img src="resources\img\heli.jpeg" alt="" />
               <div class="carousel-caption">
-
-                <p>Lorem ipsum dolor sit amet, id mei nisl sadipscing, nobis noluisse cu eum.</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <img src="resources\img\image4.jpg" alt="" />
-              <div class="carousel-caption">
-
                 <p>Lorem ipsum dolor sit amet, id mei nisl sadipscing, nobis noluisse cu eum.</p>
               </div>
             </div>
 
           </div>
-
           <!-- Left and right controls -->
           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="icon-prev" aria-hidden="false"></span>
@@ -123,144 +116,221 @@
 
     <div class="row">
       <div class="top-box col-sm-12 col-md-4">
-        <img src="resources\img\image1.jpg" alt="">
+        <img src="resources\img\orion.jpeg" alt="">
       </div>
       <div class="top-box col-sm-12 col-md-4">
-        <img src="resources\img\image2.jpg" alt="">
+        <img src="resources\img\sith.jpeg" alt="">
       </div>
       <div class="top-box col-sm-12 col-md-4">
-        <img src="resources\img\image3.jpg" alt="">
+        <img src="resources\img\heli.jpeg" alt="">
       </div>
     </div>
-
     <main class="row"> <!-- NOTE: multiple instances of very similar ideas -->
-
-      <div class="col-sm-12 col-md-8 main-element"> <!-- NOTE: first of 4 similar boxes -->
-        <div class="col-sm-12 main-top">
-          <img src="resources\img\image3.jpg" alt="">
-        </div>
-        <div class="col-sm-12 main-mid">
-          <button type="button" name="button"></button>
-          <span>.</span>
-          <button type="button" name="button"></button>
-          <div class="col-sm-12 main-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="col-sm-12 col-md-8">
+        <!-- NOTE: first of 4 similar boxes -->
+        <div class="main-element clearfix">
+          <div class="main-top ">
+            <img src="resources\img\image3.jpg" alt="">
           </div>
-        </div>
-        <footer class="col-sm-12 main-foot">
-          <div class="col-sm-6 col-md-4">
-            <span class="date-box">APRIL 29, 2014</span>
-            <!-- NOTE: datebox - date of what? -->
-          </div>
-          <div class="col-md-4 main-icons">
-            <div class="col-xs-12 icons">
-              <span class="icon-facebook2"></span>
-              <span class="icon-twitter"></span>
-              <span class="icon-camera"></span>
-              <span class="icon-pinterest2"></span>
-              <span class="icon-google-plus"></span>
-              <span class="icon-test">t</span>
-              <span class="icon-rss"></span>
+          <div class="col-sm-12 main-mid">
+            <div class="btn-group">
+              <button class="button" type="button" name="button">Click Me</button>
+              <span class="bullet">&middot;</span>
+              <button class="button" type="button" name="button">...or Me</button>
             </div>
-            <!-- NOTE: hidden for small screens -->
-            <!-- NOTE: icons  for small screens at top and bottom only-->
-          </div>
-          <div class="col-sm-6 col-md-4 arrow-box-arrow">
-            <div class="row arrow-box">
-              <div class="arrow-box-text col-sm-9">
-                <p class="text-center pagination-centered">Learn More</p>
-              </div>
-              <div class="arrow-box-arrow col-sm-3 bg-blue">
-                <p>P</p>
-              </div>
-              <!-- NOTE: readmore with arrow  -->
+            <div class="col-sm-12 main-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
-        </footer>
+          <footer class="col-sm-12 main-foot">
+            <div class="col-sm-6 col-md-4">
+              <date class="date-box">APRIL 29, 2014</date>
+              <!-- NOTE: datebox - date of what? -->
+            </div>
+            <div class="col-md-4 main-icons">
+              <div class="col-xs-12 icons">
+                <a href="javascript:void(0);"><span class="icon-facebook-f"></span></a>
+                <a href="javascript:void(0);"><span class="icon-twitter"></span></a>
+                <a href="javascript:void(0);"><span class="icon-camera"></span></a>
+                <a href="javascript:void(0);"><span class="icon-pinterest2"></span></a>
+                <a href="javascript:void(0);"><span class="icon-google-plus"></span></a>
+                <a href="javascript:void(0);"><span class="icon-tumblr"></span></a>
+                <a href="javascript:void(0);"><span class="icon-rss"></span></a>
+              </div>
+              <!-- NOTE: hidden for small screens -->
+              <!-- NOTE: icons  for small screens at top and bottom only-->
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="row arrow-box">
+                <div class="arrow-box-text col-sm-9">
+                  <p class="">Learn More</p>
+                </div>
+                <div class="arrow-box-arrow col-sm-3 icon-arrow-right">
+                </div>
+                <!-- NOTE: readmore with arrow  -->
+              </div>
+            </div>
+          </footer>
+        </div>
+        <!-- NOTE: second main box -->
+        <div class="main-element clearfix">
+          <div class="main-top ">
+            <img src="resources\img\image3.jpg" alt="">
+          </div>
+          <div class="col-sm-12 main-mid">
+            <div class="btn-group">
+              <button class="button" type="button" name="button">Click Me</button>
+              <span class="bullet">&middot;</span>
+              <button class="button" type="button" name="button">...or Me</button>
+            </div>
+            <div class="col-sm-12 main-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <footer class="col-sm-12 main-foot">
+            <div class="col-sm-6 col-md-4">
+              <date class="date-box">APRIL 29, 2014</date>
+              <!-- NOTE: datebox - date of what? -->
+            </div>
+            <div class="col-md-4 main-icons">
+              <div class="col-xs-12 icons">
+                <a href="javascript:void(0);"><span class="icon-facebook-f"></span></a>
+                <a href="javascript:void(0);"><span class="icon-twitter"></span></a>
+                <a href="javascript:void(0);"><span class="icon-camera"></span></a>
+                <a href="javascript:void(0);"><span class="icon-pinterest2"></span></a>
+                <a href="javascript:void(0);"><span class="icon-google-plus"></span></a>
+                <a href="javascript:void(0);"><span class="icon-tumblr"></span></a>
+                <a href="javascript:void(0);"><span class="icon-rss"></span></a>
+              </div>
+              <!-- NOTE: hidden for small screens -->
+              <!-- NOTE: icons  for small screens at top and bottom only-->
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="row arrow-box">
+                <div class="arrow-box-text col-sm-9">
+                  <p class="">Learn More</p>
+                </div>
+                <div class="arrow-box-arrow col-sm-3 icon-arrow-right">
+                </div>
+                <!-- NOTE: readmore with arrow  -->
+              </div>
+            </div>
+          </footer>
+        </div>
+        <!-- NOTE: third main box -->
+        <div class="main-element clearfix">
+          <div class="main-top ">
+            <img src="resources\img\image3.jpg" alt="">
+          </div>
+          <div class="col-sm-12 main-mid">
+            <div class="btn-group">
+              <button class="button" type="button" name="button">Click Me</button>
+              <span class="bullet">&middot;</span>
+              <button class="button" type="button" name="button">...or Me</button>
+            </div>
+            <div class="col-sm-12 main-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <footer class="col-sm-12 main-foot">
+            <div class="col-sm-6 col-md-4">
+              <date class="date-box">APRIL 29, 2014</date>
+              <!-- NOTE: datebox - date of what? -->
+            </div>
+            <div class="col-md-4 main-icons">
+              <div class="col-xs-12 icons">
+                <a href="javascript:void(0);"><span class="icon-facebook-f"></span></a>
+                <a href="javascript:void(0);"><span class="icon-twitter"></span></a>
+                <a href="javascript:void(0);"><span class="icon-camera"></span></a>
+                <a href="javascript:void(0);"><span class="icon-pinterest2"></span></a>
+                <a href="javascript:void(0);"><span class="icon-google-plus"></span></a>
+                <a href="javascript:void(0);"><span class="icon-tumblr"></span></a>
+                <a href="javascript:void(0);"><span class="icon-rss"></span></a>
+              </div>
+              <!-- NOTE: hidden for small screens -->
+              <!-- NOTE: icons  for small screens at top and bottom only-->
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="row arrow-box">
+                <div class="arrow-box-text col-sm-9">
+                  <p class="">Learn More</p>
+                </div>
+                <div class="arrow-box-arrow col-sm-3 icon-arrow-right">
+                </div>
+                <!-- NOTE: readmore with arrow  -->
+              </div>
+            </div>
+          </footer>
+        </div>
+        <!-- NOTE: fourth main box -->
+        <div class="main-element clearfix">
+          <div class="main-top ">
+            <img src="resources\img\image3.jpg" alt="">
+          </div>
+          <div class="col-sm-12 main-mid">
+            <div class="btn-group">
+              <button class="button" type="button" name="button">Click Me</button>
+              <span class="bullet">&middot;</span>
+              <button class="button" type="button" name="button">...or Me</button>
+            </div>
+            <div class="col-sm-12 main-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <footer class="col-sm-12 main-foot">
+            <div class="col-sm-6 col-md-4">
+              <date class="date-box">APRIL 29, 2014</date>
+              <!-- NOTE: datebox - date of what? -->
+            </div>
+            <div class="col-md-4 main-icons">
+              <div class="col-xs-12 icons">
+                <a href="javascript:void(0);"><span class="icon-facebook-f"></span></a>
+                <a href="javascript:void(0);"><span class="icon-twitter"></span></a>
+                <a href="javascript:void(0);"><span class="icon-camera"></span></a>
+                <a href="javascript:void(0);"><span class="icon-pinterest2"></span></a>
+                <a href="javascript:void(0);"><span class="icon-google-plus"></span></a>
+                <a href="javascript:void(0);"><span class="icon-tumblr"></span></a>
+                <a href="javascript:void(0);"><span class="icon-rss"></span></a>
+              </div>
+              <!-- NOTE: hidden for small screens -->
+              <!-- NOTE: icons  for small screens at top and bottom only-->
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="row arrow-box">
+                <div class="arrow-box-text col-sm-9">
+                  <p class="">Learn More</p>
+                </div>
+                <div class="arrow-box-arrow col-sm-3 icon-arrow-right">
+                </div>
+                <!-- NOTE: readmore with arrow  -->
+              </div>
+            </div>
+          </footer>
+        </div>
       </div>
-
-      <div class="col-sm-12 col-md-8"> <!-- NOTE: second of 4 similar boxes -->
-        <div class="col-sm-12 main-top">
-          <iframe src="https://www.youtube.com/embed/GcYVCvBq0FY" frameborder="0" gesture="media" allowfullscreen></iframe>
+      <aside class="col-md-4">
+        <div class="aside-box">
+          <img src="resources/img/bird.jpeg" alt="">
         </div>
-        <div class="col-sm-12 main-mid">
-          <button type="button" name="button"></button>
-          <span>.</span>
-          <button type="button" name="button"></button>
-          <div class="col-sm-12 main-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
+        <div class="aside-box">
+          <img src="resources/img/bird.jpeg" alt="">
         </div>
-        <footer class="col-sm-12 main-foot">
-          <div class="col-sm-6 col-md-4">
-            <!-- NOTE: datebox - date of what? -->
-          </div>
-          <div class="col-md-4">
-            <!-- NOTE: hidden for small screens -->
-            <!-- NOTE: icons  for small screens at top and bottom only-->
-          </div>
-        </footer>
-      </div>
-
-      <div class="col-sm-12 col-md-8"> <!-- NOTE: third of 4 similar boxes -->
-        <div class="col-sm-12 main-top">
-          <img src="resources\img\image3.jpg" alt="">
+        <div class="aside-box">
+          <img src="resources/img/bird.jpeg" alt="">
         </div>
-        <div class="col-sm-12 main-mid">
-          <button type="button" name="button"></button>
-          <span>.</span>
-          <button type="button" name="button"></button>
-          <div class="col-sm-12 main-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-        <footer class="col-sm-12 main-foot">
-          <div class="col-sm-6 col-md-4">
-            <!-- NOTE: datebox - date of what? -->
-          </div>
-          <div class="col-md-4">
-            <!-- NOTE: hidden for small screens -->
-            <!-- NOTE: icons  for small screens at top and bottom only-->
-          </div>
-        </footer>
-      </div>
-
-      <div class="col-sm-12 col-md-8"> <!-- NOTE: last of 4 similar boxes -->
-        <div class="col-sm-12 main-top">
-          <img src="resources\img\image3.jpg" alt="">
-        </div>
-        <div class="col-sm-12 main-mid">
-          <button type="button" name="button"></button>
-          <span>.</span>
-          <button type="button" name="button"></button>
-          <div class="col-sm-12 main-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-        <footer class="col-sm-12 main-foot">
-          <div class="col-sm-6 col-md-4">
-            <!-- NOTE: datebox - date of what? -->
-          </div>
-          <div class="col-md-4">
-            <!-- NOTE: hidden for small screens -->
-            <!-- NOTE: icons  for small screens at top and bottom only-->
-          </div>
-        </footer>
-      </div>
-      <aside class="col-md-4 bg-pink">
-        <p>some bullshit</p>
       </aside>
-
-      <div class="row subscribe">
-        <div class="col-xs-12 subscribe"></div>
-      </div>
-
     </main>
+    <div class="row subscribe">
+      <div class="col-xs-12 subscribe"></div>
+    </div>
     <footer></footer>
   </div> <!-- end bs main container -->
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </html>
