@@ -12,15 +12,42 @@
     <div class="container">
       <header>
         <div class="row"><!--1st row header-->
-          <div class="col-md-12 logo-image-padding">
+            <div class="col-xs-12 col-md-12">
+            <ul class="nav nav-pills">    <!-- navigation at top pf page, todo: update to make hamburguer menu in small devices -->
+              <li class="nav-item">
+                <a href="javascript:void();" class="nav-link active">Main</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown Demo</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void()" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void()" class="nav-link disabled">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void()" class="nav-link disabled">Shortcodes</a>
+              </li>
+            </ul>
+
             <h3>This will be the logo</h3> <br>
-            <img src="shelty3.jpg" alt="shelty3" height="10%" width="10%">
+            <div class="logo-image-padding">
+              <img src="shelty3.jpg" alt="shelty3" height="10%" width="10%">
+            </div>
           </div>
         </div>
       </header>
 
       <div class="row"><!--2nd row carousel-->
-        <div class="col-md-12">
+        <div class="col-xs-12 col-md-12">
 
             <!--carousel code follows-->
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -56,16 +83,22 @@
       </div><!--2nd row-->
 
       <div class="row"><!--3rd row, 3 lifestyle pictures-->
-        <div class="col-md-4  parent pull-right">
-            <img src="shelty3.jpg" alt="shelty3" height="50%" width="50%" class="image1 lifestyle-image ">
+        <div class="col-xs-12 col-md-4  parent pull-right">
+            <div class="">
+              <img src="shelty3.jpg" alt="shelty3" height="50%" width="50%" class="image1 lifestyle-image ">
+            </div>
             <button type="button" class="image2">Button lifestyle</button>
         </div>
-        <div class="col-md-4  parent">
-            <img src="shelty3.jpg" alt="shelty3" height="50%" width="50%" class="image1 lifestyle-image center">
+        <div class="col-xs-12 col-md-4  parent">
+            <div class="">
+              <img src="shelty3.jpg" alt="shelty3" height="50%" width="50%" class="image1 lifestyle-image center">
+            </div>
             <button type="button" class="image2">Button lifestyle</button>
         </div>
-        <div class="col-md-4  parent">
-            <img src="shelty3.jpg" alt="shelty3" height="50%" width="50%" class="image1 lifestyle-image pull-left">
+        <div class="col-xs-12 col-md-4  parent">
+            <div class="">
+              <img src="shelty3.jpg" alt="shelty3" height="50%" width="50%" class="image1 lifestyle-image pull-left">
+            </div>
             <button type="button" class="image2">Button lifestyle</button>
         </div>
       </div><!--3rd row-->
@@ -73,44 +106,69 @@
       <div class="row"><!--4th main row conteiner of 2 columns: left w 7 articles, right variety content-->
         <div class="col-md-12">
           <div class="row">
-            <div class="col-md-8">
-              <h3>This will be the content of left column with 7 articles</h3><!-- left column w 7 articles/rows-->
+            <div class="col-xs-12 col-md-8 "> <!-- left column w 7 articles/rows-->
+              <h3>This will be the content of left column with 7 articles</h3>
 
-
-              <!-- video with file example
-              <video width="320" height="240" controls>
-                <source src="https://www.youtube.com/watch?v=FiToKVrqZ18" type="video/mp4">
-                <source src="https://www.youtube.com/watch?v=FiToKVrqZ18" type="video/ogg">
-                    Your browser does not support the video tag.
-              </video> -->
-              <!--video from youtube -->
-              <iframe width="420" height="315"
-                src="https://www.youtube.com/embed/XGSy3_Czz8k">
-              </iframe>
 
                 <div class="articles-border"> <!-- template for the 7 articles-->
                   <div class=""><!--image top-->
-                    <img src="shelty1.jpg" alt="shelty3" height="100%" width="100%">
+                    <img class="articles-image" src="shelty1.jpg" alt="shelty3" height="100%" width="100%">
                   </div>
                   <div class="center"> <!--articles-first-buttons-->
-                    <a href="javascript:void(0)" class="button green-white-button center">Link Button1</a>
-                    <a href="javascript:void(0)" class="button green-white-button center">Link Button2</a>
+                    <a href="javascript:void(0)" class="button white-green-button center button-padding-articles-top1">Link Button1</a>
+                    <a href="javascript:void(0)" class="button white-green-button center button-padding-articles-top2">Link Button2</a>
                   </div>
                   <h2 class="articles-title">Title of the article here, centered, justify center, bold</h2>
-                  <p class="articles-text">Text of the article here, centered with picture, all margins on the left are the same</p>
-                  <div class="articles-footer"><!--articles-footer contains: date button, simbols and read more button-->
-                     <button type="button">Button with date</button>
+                  <div class="articles-text">Text of the article here, centered with picture, all margins on the left are the same. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor magna consectetur felis fermentum, blandit pulvinar orci vulputate. Fusce non gravida mi, non cursus lacus. Maecenas tellus dui, molestie vel sem eget, consequat aliquam leo. </div>
+                  <div class="articles-footer center"><!--articles-footer contains: date button, simbols and read more button-->
+                     <!--<button type="button  button-padding-articles-bottom1">Button with date</button>
                      <span>Characters from IcoMoon</span>
-                     <button type="button">read more button</button>
+                     <button type="button  button-padding-articles-bottom2">read more button</button> -->
+                     <a href="javascript:void(0)" class="button white-green-button center button-padding-articles-bottom1">bottom Button1</a>
+                     <span>Characters IcoMoon</span>
+                     <a href="javascript:void(0)" class="button white-green-button center button-padding-articles-bottom2">bottom Button2</a>
                   </div>
                 </div><!--end of template 7 articles-->
 
+                <!-- Article w/video here -->
+                  <div class="articles-border"><!--article w/video -->
+                    <div class="">
+                    <iframe class="articles-image" width="640" height="360" src="https://www.youtube.com/embed/FiToKVrqZ18" frameborder="0" ></iframe>
+                    </div>
+                    <div class="center"> <!--articles-first-buttons-->
+                      <a href="javascript:void(0)" class="button white-green-button center button-padding-articles-top1">Link Button1</a>
+                      <a href="javascript:void(0)" class="button white-green-button center button-padding-articles-top2">Link Button2</a>
+                    </div>
+                    <h2 class="articles-title">Title of the article here, centered, justify center, bold</h2>
+                    <div class="articles-text">Text of the article here, centered with picture, all margins on the left are the same. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor magna consectetur felis fermentum, blandit pulvinar orci vulputate. Fusce non gravida mi, non cursus lacus. Maecenas tellus dui, molestie vel sem eget, consequat aliquam leo. </div>
+                    <div class="articles-footer center"><!--articles-footer contains: date button, simbols and read more button-->
+                      <a href="javascript:void(0)" class="button white-green-button center button-padding-articles-bottom1">bottom Button1</a>
+                      <span>Characters IcoMoon</span>
+                      <a href="javascript:void(0)" class="button white-green-button center button-padding-articles-bottom2">bottom Button2</a>
+                    </div>
+                </div><!--end of template 7 articles-->
             </div> <!--end of left column-->
-            <div class="col-md-4"><!-- Right column w variety content-->
-              <h3>This will be the content of right column with variety</h3>
-              <a href="javascript:void(0)" class="button green-white-button">Link Button</a>
+
+
+            <div class="col-xs-12 col-md-4"><!-- Right column w variety content-->
+
+              <div class="">
+                <h4><span class="">THIS IS A TEST</span></h4>
+                <p>this is some content other</p>
+              </div>
+
+              <h3 class="test-contentbox">This will be the content of right column with variety</h3>
+
+              
+              <h3 class="test-contentbox">This will be the content of right column with variety</h3>
+              <h3 class="test-contentbox">This will be the content of right column with variety</h3>
+              <h3 class="test-contentbox">This will be the content of right column with variety</h3>
+              <h3 class="test-contentbox">This will be the content of right column with variety</h3>
+              <h3 class="test-contentbox">This will be the content of right column with variety</h3>
+              <h3 class="test-contentbox">This will be the content of right column with variety</h3>
+              <!--<a href="javascript:void(0)" class="button green-white-button ">Link Button</a>
               <a href="javascript:void(0)" class="button white-green-button">white and green Button</a>
-              <a href="javascript:void(0)" class="button gray-gray-button">gray-gray Button</a>
+              <a href="javascript:void(0)" class="button gray-gray-button">gray-gray Button</a> -->
             </div>
           </div>
         </div>

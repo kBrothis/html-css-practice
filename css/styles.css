@@ -1,6 +1,16 @@
 .background-color{
   background-color: green;
 }
+.test-contentbox{
+  background-color: #cccc9b;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+  padding-top: 80px;
+  height: 250px;
+  width: 250px;
+  box-shadow: 0px 2px 2px gray;
+}
 
 .button{
     padding: 5px 20px;
@@ -30,10 +40,33 @@
   border: 1px solid black;
   color: white;
 }
+.button-padding-articles-top1{ /*todo: change this to a position that can scale into small screens*/
+  margin-left: 200px;
+}
+.button-padding-articles-top2{ /*todo: change this to a position that can scale into small screens*/
+  margin-left: 40px;
+}
+/*
+.button-padding-articles-bottom{ /*todo: change this to a position that can scale into small screens
+  margin-left: 30px;
+}*/
+.button-padding-articles-bottom1{ /*todo: change this to a position that can scale into small screens*/
+  margin-left: 50px;
+}
+.button-padding-articles-bottom2{ /*todo: change this to a position that can scale into small screens*/
+  margin-left: 100px;
+}
+.force-bottom-button-margin{
+  margin-left: 50px;
+}
 
 .logo-image-padding{
-  padding-bottom: 80px;
+  padding-bottom: 60px;
+}
 
+
+.image-center-screen{
+  margin:  auto 0;
 }
 .center{
   align-items: center;
@@ -49,7 +82,9 @@
   float: left;
 }
 .articles-border{
-  border: 1px solid #4CAF50;
+  border: 1px solid #d0d1cd;
+  box-shadow: 0px 2px 2px gray;
+  border-top: 0;
   margin-left: 20px;
 }
 .articles-title{
@@ -57,14 +92,23 @@
   font-weight: bold;
   padding-left: 10px;
 }
+.articles-image{
+  padding-bottom: 30px;
+}
 .articles-footer{
-  background-color: #888888;
-  border: 1px solid gray;
-  float:centered;
+  background-color: #d0d1cd;
+  /*border: 1px solid gray;*/
+  border-top: 0;
+  /*float:centered;
+  align-items: center;*/
   /*box-shadow: 0px 2px 5px #888888;*/
 }
 .articles-text{
   font-weight: bold;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 60px;
 }
 header>div>div{
   text-align: center;
@@ -84,4 +128,26 @@ header>div>div{
   position: absolute;
   top: 90px; /*for placing button on top of images, play with top and left, .parent is used by parent div that has img1 at bottom*/
   left: 50px;
+}
+/* media queries*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    display: center; /*this is not doing anything*/
+    }
+}
+
+/*testing line in the middle of button solution from:https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle*/
+/*h4 {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid black;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+h4 span {
+    background:#fff;
+    padding:0 10px;
+}
+*/
 }
