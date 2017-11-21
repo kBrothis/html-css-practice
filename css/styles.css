@@ -224,9 +224,7 @@ footer {
 }
 
 .footer-top {
-  padding: 30px;
-  padding-left: 100px;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .jump-button {
@@ -237,16 +235,17 @@ footer {
   border-radius: 50%;
   text-align: center;
   padding-top: 20px;
-  margin-left: 150px;
+  margin: 0 auto;
+  /* margin-left: 150px; */
 }
 
 .footer-image {
   max-height: 300px;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 50px;
 }
 
 .footer-copyright {
+  padding-top: 15px;
   padding-bottom: 15px;
 }
