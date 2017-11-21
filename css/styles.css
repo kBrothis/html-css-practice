@@ -69,19 +69,21 @@ header {
 .articledate, .articleread  {
     border: 1px solid #d0d0d0; 
  }
-/*.articledate {
-    margin-left: 20%;
-    margin-right: 50%;
+.articledate {
+    margin-left: 20px;
+    margin-right: 50px;
 }
+
 .article-icon {
-    padding: 5% 20%;
+    padding: 5px 20px;
 }
+
 
 .articleread {
-    margin-left: 50%;
+    margin-left: 50px;
     margin-right: 0;
 
-}*/
+}
 .read-more-button {
     margin-left: 0;
     background-color: #1f7a1f;
@@ -91,5 +93,13 @@ header {
     display: inline-block;
     text-align: center;
     height: 20px;
-
+}
+@media (max-width: 768px) {
+    .article-icon {
+        display: none;
+    }
+    .articledate, .articleread {
+        margin: 2px;
+        padding: 2px;
+    }
 }
