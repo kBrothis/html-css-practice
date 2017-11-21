@@ -2,14 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The joker</title>
+    <title>Frank Gehry | Archittect</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Halant:400,600|Proza+Libre|Source+Sans+Pro:300i" rel="stylesheet">
+    <link rel="stylesheet" href="css/ico_moon.css">
     <link rel="stylesheet" href="css/style.css">
   <body>
-    <header>
+
+  <!-- svg icons begin-->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-search" viewBox="0 0 32 32">
+        <title>search</title>
+        <path d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 32 32">
+        <title>menu</title>
+        <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+        </symbol>
+        <symbol id="icon-facebook" viewBox="0 0 32 32">
+        <title>facebook</title>
+        <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 32 32">
+        <title>instagram</title>
+        <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+        <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+        <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+        </symbol>
+        <symbol id="icon-twitter" viewBox="0 0 32 32">
+        <title>twitter</title>
+        <path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+        </symbol>
+        <symbol id="icon-rss" viewBox="0 0 32 32">
+        <title>rss</title>
+        <path d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"></path>
+        </symbol>
+        <symbol id="icon-tumblr" viewBox="0 0 32 32">
+        <title>tumblr</title>
+        <path d="M18.001 14l-0 7.318c0 1.857-0.024 2.927 0.173 3.453 0.195 0.524 0.685 1.067 1.218 1.381 0.709 0.425 1.517 0.637 2.428 0.637 1.62 0 2.577-0.214 4.179-1.267v4.811c-1.366 0.642-2.558 1.019-3.666 1.279-1.109 0.258-2.308 0.388-3.596 0.388-1.463 0-2.327-0.184-3.45-0.552-1.124-0.371-2.083-0.9-2.876-1.579-0.795-0.685-1.344-1.413-1.652-2.182s-0.46-1.888-0.46-3.351v-11.222h-4.295v-4.531c1.256-0.408 2.661-0.993 3.556-1.755 0.899-0.764 1.618-1.678 2.16-2.748 0.543-1.067 0.917-2.429 1.121-4.079h5.159l-0 8h7.999v6h-7.999z"></path>
+        </symbol>
+        <symbol id="icon-pinterest2" viewBox="0 0 32 32">
+        <title>pinterest2</title>
+        <path d="M16 0c-8.825 0-16 7.175-16 16s7.175 16 16 16 16-7.175 16-16-7.175-16-16-16zM16 29.863c-1.431 0-2.806-0.219-4.106-0.619 0.563-0.919 1.412-2.431 1.725-3.631 0.169-0.65 0.863-3.294 0.863-3.294 0.45 0.863 1.775 1.594 3.175 1.594 4.181 0 7.194-3.844 7.194-8.625 0-4.581-3.738-8.006-8.544-8.006-5.981 0-9.156 4.019-9.156 8.387 0 2.031 1.081 4.563 2.813 5.369 0.262 0.125 0.4 0.069 0.463-0.188 0.044-0.194 0.281-1.131 0.387-1.575 0.031-0.137 0.019-0.262-0.094-0.4-0.575-0.694-1.031-1.975-1.031-3.162 0-3.056 2.313-6.019 6.256-6.019 3.406 0 5.788 2.319 5.788 5.637 0 3.75-1.894 6.35-4.356 6.35-1.363 0-2.381-1.125-2.050-2.506 0.394-1.65 1.15-3.425 1.15-4.613 0-1.063-0.569-1.95-1.756-1.95-1.394 0-2.506 1.438-2.506 3.369 0 1.225 0.412 2.056 0.412 2.056s-1.375 5.806-1.625 6.887c-0.281 1.2-0.169 2.881-0.050 3.975-5.156-2.012-8.813-7.025-8.813-12.9 0-7.656 6.206-13.863 13.862-13.863s13.863 6.206 13.863 13.863c0 7.656-6.206 13.863-13.863 13.863z"></path>
+        </symbol>
+      </defs>
+    </svg>
+  <!-- svg icons end -->
+
+    <header id="top">
       <div class="container">
         <div class="row">
-          <div class="col-md-1">hamburger</div>
+          <div class="col-md-1"><svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg></div>
           <nav class="col-md-10 row">
             <div class="col-md-8 col-md-offset-2 links">
               <ul>
@@ -21,37 +65,43 @@
               </ul>
             </div>
           </nav>
-          <div class="col-md-1">search</div>
+          <div class="col-md-1"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></div>
         </div>
       </div>
     </header>
 
     <div class="logo">
+      <div class="ligh-panel"></div>
       <div class="container">
         <div class="col-md-12 logo-title">
           <div class="col-md-6 col-md-offset-3 social-nav">
             <ul>
-              <li><a href="javascript:void(0);">1</a></li>
-              <li><a href="javascript:void(0);">2</a></li>
-              <li><a href="javascript:void(0);">3</a></li>
-              <li><a href="javascript:void(0);">4</a></li>
-              <li><a href="javascript:void(0);">5</a></li>
-              <li><a href="javascript:void(0);">6</a></li>
+              <li><a href="javascript:void(0);"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
+              <li><a href="javascript:void(0);"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+              <li><a href="javascript:void(0);"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a></li>
+              <li><a href="javascript:void(0);"><svg class="icon icon-pinterest2"><use xlink:href="#icon-pinterest2"></use></svg></a></li>
+              <li><a href="javascript:void(0);"><svg class="icon icon-tumblr"><use xlink:href="#icon-tumblr"></use></svg></a></li>
+              <li><a href="javascript:void(0);"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a></li>
             </ul>
           </div>
-          <div class="col-md-4 col-md-offset-4"><img src="img/joker_lettering.png" alt=""></div>
+          <div class="col-md-4 col-md-offset-4">
+            <img src="img/f_gehry_logo.png" alt="">
+            <hr>
+            <h3>Frank  Gehry</h3>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Hero image -->
     <div class="hero">
+      <div class="dark-panel"></div>
       <div class="carousel hero-img">
         <div class="container">
-          <div class="col-md-3 col-md-offset-2 hero-article">
+          <div class="col-md-4 col-md-offset-4 hero-article">
             <article>
               <h1>Lorem ipsum dolor sit amet</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laboriosam error quod aperiam veniam, nihil consequuntur dolor delectus voluptas ea minus perferendis suscipit impedit temporibus quaerat eaque corporis maxime similique nemo inventore aut. Animi perspiciatis, doloribus! Impedit in itaque magnam dolore nihil fugiat laborum laboriosam alias. Modi quisquam necessitatibus doloremque architecto sit iusto, blanditiis, facere repudiandae vero harum deserunt cumque.</p>
+              <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eius voluptate numquam maxime nulla tempora ab quos veritatis, dolorum quae?</i>
               <button class="col-md-6 col-md-offset-3">Read More</button>
             </article>
           </div>
@@ -59,29 +109,223 @@
       </div>
     </div>
 
-    <!-- Image links -->
     <div class="container">
+
+      <!-- Image links -->
       <div class="row btn-links">
         <div class="col-md-12 padding-cols">
           <div class="row">
             <div class="col-md-4 btn-image">
+              <div class="batman">
+                <div class="dark-panel"></div>
+                <button>Sketches</button>
+              </div>
+            </div>
+            <div class="col-md-4 btn-image">
               <div class="smile">
-                <button>smile</button>
+                <div class="dark-panel"></div>
+                <button>Models</button>
               </div>
             </div>
             <div class="col-md-4 btn-image">
               <div class="laugh">
-                <button>laugh</button>
-              </div>
-            </div>
-            <div class="col-md-4 btn-image">
-              <div class="batman">
-                <button>batman!</button>
+                <div class="dark-panel"></div>
+                <button>Buildings</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-12 padding-cols">
+          <div class="col-md-8 blog-posts">
+            <section class="blog-post">
+              <div class="col-md-12 padding-cols">
+                <img src="img/fish_sculpture.jpg" alt="">
+              </div>
+              <div class="col-md-10 col-md-offset-1 padding-cols blog-content">
+                <div class="blog-btns">
+                  <button class="blog-btn">Hello</button>
+                  <button class="blog-btn">Hello</button>
+                </div>
+                <article>
+                  <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, magnam porro nesciunt?</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad ex, ratione delectus perspiciatis ullam impedit dolore eum doloremque enim, unde, maiores. Porro nostrum exercitationem reprehenderit et excepturi, reiciendis impedit maiores aut eos ab id commodi, minima, quas obcaecati in atque nemo aspernatur velit! Est, quasi nobis sed amet officia veritatis laudantium velit, magni similique.</p>
+                </article>
+                <div class="col-md-12 blog-footer padding-cols">
+                  <div class="col-md-2 padding-cols">
+                    <div>Date</div>
+                  </div>
+                  <div class="col-md-8 padding-cols">
+                    <div class="social-nav">
+                      <ul>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-pinterest2"><use xlink:href="#icon-pinterest2"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-tumblr"><use xlink:href="#icon-tumblr"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-2 padding-cols"><button class="pull-right">Read More</button></div>
+                </div>
+              </div>
+            </section>
+            <section class="blog-post">
+              <iframe src="https://www.youtube.com/embed/gp3P_YWd4Xo?rel=0" frameborder="0" allowfullscreen></iframe>
+              <div class="col-md-10 col-md-offset-1 padding-cols blog-content">
+                <div class="blog-btns">
+                  <button class="blog-btn">Hello</button>
+                  <button class="blog-btn">Hello</button>
+                </div>
+                <article>
+                  <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat similique odit quos!</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, veritatis deleniti earum iusto nam ut, illo numquam cupiditate aperiam temporibus officia unde sed eum explicabo esse reiciendis nihil impedit ex. Accusantium dignissimos optio, nesciunt placeat, ipsam, rerum porro perferendis reprehenderit obcaecati assumenda unde provident. At est facilis excepturi totam quaerat corporis, repudiandae eligendi maiores quam.</p>
+                </article>
+                <div class="col-md-12 blog-footer padding-cols">
+                  <div class="col-md-2 padding-cols">
+                    <div>Date</div>
+                  </div>
+                  <div class="col-md-8 padding-cols">
+                    <div class="social-nav">
+                      <ul>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-pinterest2"><use xlink:href="#icon-pinterest2"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-tumblr"><use xlink:href="#icon-tumblr"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-2 padding-cols"><button class="pull-right">Read More</button></div>
+                </div>
+              </div>
+            </section>
+            <section class="blog-post">
+              <img src="img/fondation_louis_vutton.jpg" alt="">
+              <div class="col-md-10 col-md-offset-1 padding-cols blog-content">
+                <div class="blog-btns">
+                  <button class="blog-btn">Hello</button>
+                  <button class="blog-btn">Hello</button>
+                </div>
+                <article>
+                  <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates labore, similique repellat.</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quos, ad! Neque aliquid ex possimus distinctio, eaque recusandae magni ipsum repellat dolorem! Eos, porro soluta repellat explicabo eveniet, facilis nostrum delectus aperiam corrupti quia placeat assumenda. Fugit mollitia optio modi aliquid sequi et aspernatur, itaque consectetur magnam consequuntur, enim natus, ab eos dolore quo autem.</p>
+                </article>
+                <div class="col-md-12 blog-footer padding-cols">
+                  <div class="col-md-2 padding-cols">
+                    <div>Date</div>
+                  </div>
+                  <div class="col-md-8 padding-cols">
+                    <div class="social-nav">
+                      <ul>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-pinterest2"><use xlink:href="#icon-pinterest2"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-tumblr"><use xlink:href="#icon-tumblr"></use></svg></a></li>
+                        <li><a href="javascript:void(0);"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-2 padding-cols"><button class="pull-right">Read More</button></div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="col-md-4 aside-col">
+            <div class="col-md-12 aside-card">
+              <button>Share on</button>
+              <div class="col-md-12 padding-cols ad-pic">
+                <img src="https://www.timeshighereducation.com/sites/default/files/why-study-architecture_0.jpg" alt="">
+              </div>
+              <article>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos possimus sequi hic excepturi similique. Sit nesciunt minus vel enim laboriosam quod corrupti. Eos, tempora, rem.
+              </article>
+              <a href="javascript:void(0);">Read More</a>
+              <div class="aside-social">
+                <div><a href="javascript:void(0);"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></a></div>
+                <div><a href="javascript:void(0);"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></a></div>
+                <div><a href="javascript:void(0);"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></a></div>
+              </div>
+            </div>
+            <div class="col-md-12 aside-card">
+              <button>Share on</button>
+              <div class="col-md-12 ad-pic">
+                <form>
+                  <input type="text" placeholder="E-mail address">
+                  <button>Subscribe</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-12 aside-card">
+              <button>Share on</button>
+              <div class="col-md-12 ad-pic aside-notes padding-cols">
+                <div class="col-md-12 padding-cols note">
+                  <div class="col-md-4">
+                    <img src="https://cdn.architecturendesign.net/wp-content/uploads/2014/06/6589.jpg" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam molestias incidunt laboriosam, fuga saepe placeat.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 padding-cols note">
+                  <div class="col-md-4">
+                    <img src="https://cdn.architecturendesign.net/wp-content/uploads/2014/06/6589.jpg" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam molestias incidunt laboriosam, fuga saepe placeat.</p>
+                  </div>
+                </div>
+                <div class="col-md-12 padding-cols note">
+                  <div class="col-md-4">
+                    <img src="https://cdn.architecturendesign.net/wp-content/uploads/2014/06/6589.jpg" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam molestias incidunt laboriosam, fuga saepe placeat.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 aside-card">
+              <button>Share on</button>
+              <div class="col-md-12 ad-pic search">
+                <form>
+                  <input type="text" placeholder="Search">
+                  <button><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-md-12 padding-cols foot-conts">
+          <div class="cont-foot">
+            <img src="img/f_gehry_logo.png" alt="">
+          </div>
+          <div class="cont-foot">
+            <h4>Subscribe to daily updates</h4>
+            <form>
+              <input type="text" placeholder="place your email here">
+              <button>Subscribe</button>
+            </form>
+          </div>
+          <div class="cont-foot">
+            <a href="#top"><span class="go-to-top">to top</span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="instagram-footer">
+      <a href="javascript:void(0);"><span class="instagram-link">My Instagram</span></a>
     </div>
   </body>
 </html>

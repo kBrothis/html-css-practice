@@ -1,8 +1,36 @@
 body{
-  /*background-image: url('../img/hahaha.png');
-  background-repeat: repeat;
-  background-position: center center;*/
-  background-color: #d7d7d7;
+  background-color: #f0ecec;
+  font-family: 'Proza Libre';
+  color: #737373;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Halant';
+}
+
+svg{
+  font-size: 18px;
+}
+
+h1{
+  font-size: 4em;
+}
+
+h2{
+  color: #3c3c3c;
+}
+
+i{
+  font-family: 'Source Sans Pro'
+}
+
+li a{
+  color: #737373;
+  transition: all .25s ease;
+}
+
+li a:hover{
+  color: #cd0d0d;
 }
 
 ul{
@@ -17,13 +45,50 @@ li{
   list-style: none;
 }
 
+hr{
+  border-top: 1px solid #bdbcbc
+}
+
+.aside-col{
+  padding-left: 20px;
+}
+
 a:hover{
   text-decoration: none;
 }
 
+button{
+  border: 1px solid #737373;
+  color: #737373;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+button:hover{
+  background-color: #c30a0a;
+  border: 1px solid #c30a0a;
+  color: white;
+}
+
+input{
+  padding:10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+form button{
+  padding: 10px;
+  background-color: #c30a0a;
+  color: white;
+  border: 1px solid #c30a0a;
+}
+
 .container{
   width: 80%;
-  min-width: 1170px;
+  min-width: 990px;
   padding: 0;
 }
 
@@ -34,7 +99,7 @@ a:hover{
 header{
   width: 100%;
   height: auto;
-  background-color: #dddddd;
+  background-color: #2d2d2d;
   border: 1px solid #bebebe;
   padding: 2em 0;
 }
@@ -48,47 +113,159 @@ nav li{
 .social-nav li{
   display: inline-block;
   width: 16.06%;
-}
-
-.logo{
-  background-image: url('https://www.photohdx.com/images/2016/03/yellow-vintage-wrinkled-paper-background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .hero{
   background-color: #f2f2f2;
 }
 
+.logo{
+  background-color: white;
+  background-image: url('../img/arc-bg.png');
+  position: relative;
+}
+
+.light-panel{
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.logo h3{
+  margin-top: 5px;
+  color: #d70d0d;
+  text-align: center;
+  letter-spacing: 30px;
+}
+
 .logo-title{
-  margin-top: 77px;
+  margin: 35px 0 65px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero{
+  position: relative;
+}
+
+.dark-panel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.35);
+  z-index: 1;
 }
 
 .hero-img{
   padding: 0;
-  background-image: url("../img/joker-hero.png");
+  background-image: url("../img/guggenheim.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 480px;
+  background-position: center top;
+  height: 560px;
 }
 
 .hero-article{
   color: white;
-  margin-top: 30px;
+  margin-top: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-article h1{
+  text-align: center;
+}
+
+.hero-article i{
+  font-size: 1.5em;
+  line-height: 1.6;
 }
 
 .hero-article button{
   margin-top:20px;
-  background-color: #0ce358;
-  border: 0;
   height: 40px;
+  border: 1px solid #c30a0a;
+  background-color: #c30a0a;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.hero-article button:hover{
+  border: 1px solid white;
+  background-color: rgba(165, 15, 238, 0);
 }
 
 .btn-links{
   margin: 45px 0;
   padding: 0;
+}
+
+.btn-image{
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-image .dark-panel{
+  opacity: 0;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.btn-image .dark-panel:before{
+  content: "";
+  width: 100%;
+  height: 100px;
+  background-color: rgba(195, 10, 10, 0.48);
+  position: absolute;
+  top: -100px;
+}
+
+.btn-image:hover .dark-panel{
+  opacity: 1;
+}
+
+.btn-image:hover .dark-panel:before{
+  top: 100%;
+  -webkit-transition: all .2s .1s ease;
+  -moz-transition: all .2s .1s ease;
+  -ms-transition: all .2s .1s ease;
+  -o-transition: all .2s .1s ease;
+  transition: all .2s .1s ease;
+}
+
+.btn-image button{
+  width: 25%;
+  border: 0;
+  height: 35px;
+  position: absolute;
+  background-color: #c30a0a;
+  color: white;
+  z-index: 2;
+  cursor: pointer;
+  left: 50%;
+  margin-left:-12.5%;
+  top: 100%;
+  -webkit-transition: all .25s  .15s ease;
+  -moz-transition: all .25s  .15s ease;
+  -ms-transition: all .25s  .15s ease;
+  -o-transition: all .25s  .15s ease;
+  transition: all .25s  .15s ease;
+}
+
+.btn-image:hover button{
+  top: 50%;
+  margin-top: -17.5px
 }
 
 .btn-image:first-child{
@@ -104,9 +281,198 @@ nav li{
 }
 
 .smile, .laugh, .batman{
-  background-image: url('https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/n7llwa5jsaua6u4dgw31/you-wanna-know-how-he-got-those-scars-here-are-7-of-the-joker-s-many-origin-stories.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 300px;
+  width: 100%;
+  position: relative
+}
+
+.smile{
+  background-image: url('../img/model.jpg');
+}
+
+.laugh{
+  background-image: url('../img/frankgehry600.jpg');
+}
+
+.batman{
+  background-image: url('../img/sketches.jpg');
+}
+
+.blog-posts{
+  padding-right: 20px;
+}
+
+.blog-post{
+  overflow: auto;
+  margin-bottom: 55px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 3px 20px rgba(61, 61, 61, 0.5);
+}
+
+.blog-post iframe{
+  width: 100%;
+  height: 460px;
+}
+
+.blog-btns{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-btn{
+  width: 30%;
+  display: inline-block;
+  border: 1px solid #737373;
+  color: #737373;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.blog-content{
+  padding: 35px 0 10px;
+}
+
+.blog-footer{
+  margin-top: 25px;
+}
+
+.blog-footer button{
+  width: 70%;
+}
+
+.blog-footer button:hover{
+  color: white;
+}
+
+.aside-card{
+  padding: 20px;
+  margin: 15px 0;
+  overflow: auto;
+  background-color: #f9f9f9;
+  box-shadow: 0px 3px 20px rgba(61, 61, 61, 0.5);
+  text-align: center;
+}
+
+.aside-card button{
+  width: 20%;
+  display: inline-block;
+  margin: 15px 0 25px;
+}
+
+.aside-card article{
+  margin-bottom: 20px;
+}
+
+.aside-card a{
+  color: #c30a0a;
+}
+
+.ad-pic{
+  height: auto;
+  margin-bottom: 25px
+}
+
+.ad-pic input, .ad-pic button{
+  width: 100%;
+}
+
+.aside-social{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.aside-social div{
+  width: 22%;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.aside-notes p{
+  text-align: left;
+}
+
+.note{
+  margin-bottom: 10px;
+}
+
+.search input{
+  width: 79%;
+}
+
+.search button{
+  width: 20%;
+}
+
+footer{
+  background-color: white;
+  padding: 20px 0;
+}
+
+.foot-conts{
+  text-align: center;
+  vertical-align: center;
+}
+
+.cont-foot{
+  padding: 0 20px;
+  width: 33%;
+  display: inline-block;
+}
+
+.cont-foot:nth-child(2){
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin: 10px 0;
+}
+
+.cont-foot form{
+  margin-top: 25px;
+}
+
+.cont-foot input{
+  width: 70%;
+}
+
+.cont-foot span{
+  border:1px solid #737373;
+  padding: 48px;
+  border-radius: 50%;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.cont-foot span:hover{
+  background-color: #c30a0a;
+  border: 1px solid #c30a0a;
+  color: white;
+}
+
+.cont-foot button{
+  width: 29%;
+}
+
+.instagram-footer{
+  background-color: #2d2d2d;
+  height: 250px;
+  width: 100%;
+  text-align: center;
+}
+
+.instagram-link{
+  display: inline-block;
+  background-color: #c30a0a;
+  padding: 15px 25px;
+  color: white;
+  margin-top: 100px;
 }
