@@ -467,3 +467,32 @@ header h1
 {
 	color: green;
 }
+
+.image-wrapper
+{
+	border: 25px solid white;
+	position: absolute;
+	right: 20px;
+	left: 20px;
+}
+
+.image-wrapper img
+{
+	height: 100%;
+}
+
+.ad
+{
+	display: inline-block;
+	height: auto;
+}
+
+.main .ad h3
+{
+	position: relative;
+	z-index: 10;
+	left: 20px;
+	font-family: 'Cookie', cursive;
+	font-size: 300%;
+	text-align: center;
+}
