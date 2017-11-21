@@ -22,8 +22,6 @@ li
 }
 
 
-
-
 /*navbar*/
 /*still need to figure out how to make it go across the entire top*/
 nav
@@ -119,10 +117,8 @@ header h1
 {
 	margin: 0;
 	position: relative;
-	height: 610px;
+	height: 450px;
 	color: lightgrey;
-	/*background-color: rgba(188, 200, 219, 0.5);
-	border-radius: 2px;*/
 	text-shadow: 0 0 1px black;
 }
 
@@ -131,57 +127,59 @@ header h1
 	position: absolute;
 	z-index: 10;
 	width: 100%;
-	/*margin-left:-1180px;*/
-
+	left:0;
 }
-/*.button-box
+.button-box
 {
 	position: absolute;
-	height: 100px;
-	width: 100px;
-	border: 2px solid grey;
+	margin-top: 200px;
 	z-index: 20;
-}*/
+}
 .carousel .icon-circle-left, .icon-circle-right
 {
-	position: absolute;
 	font-size: 400%;
-	height: 600px;
-	padding: 5px;
-	z-index: 20;
+	padding: 10px;
+	background-color: grey;
+	border-radius: 5px;
+	text-align: center;
 }
 
-/*.carousel-text
-{
-	position: absolute;
-	z-index: 20;
-	margin-top: 300px;
-	color: black;
-	text-align: center;
-}*/
 .carousel h2
 {
 	position: absolute;
-	margin-top: 220px;
-	text-align: right;
+	margin-top: 100px;
+	text-align: center;
 	z-index: 20;
-	font-size: 300%;
+	font-size: 200%;
+	padding: 0 200px;
+	text-shadow: 1px 0 1px black;
+
 }
 
 .carousel p
 {
 	position: absolute;
 	z-index: 20;
-	margin-top: 300px;
+	margin-top: 200px;
+	padding: 0 200px;
+	text-align: center;
+	text-shadow: 1px 0 1px black;
 }
 
 .carousel button
 {
 	position: absolute;
 	z-index: 20;
-	margin-top: 350px;
+	margin-top: 300px;
 	text-align: center;
-	background-color: green;
-	font-size: 200%;
-	text-shadow: none;
+	background-color: #22BB66;
+	font-size: 100%;
+	width: 150px;
+	height: 50px;
+	/*padding: 15px 20px 10px;*/
+	color: white;
+	left: 45%;
+	border-radius: 5px;
+	border: 5px solid grey;
+  	/*box-shadow: 5px 5px 0 10px grey;*/
 }
