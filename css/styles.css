@@ -1,6 +1,28 @@
 body {
   background-image: url("../images/winter_background.png");
-  /*background-blend-mode: lighten;*/
+}
+
+h1 {
+  /*font-family: cursive;*/
+  font-size: 67px;
+  font-family: 'Homemade Apple';
+}
+
+h4 {
+  text-align: left;
+}
+
+p {
+  margin: 20px;
+  text-align: center;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*Navigation row*/
@@ -9,12 +31,24 @@ body {
   background-color: white;
 }
 
+.icon-paragraph-left {
+  float: right;
+  margin-top: 30px;
+}
+
 .navCenter {
-  margin-left: 130px;
+  /*margin-left: 130px;*/
+  padding-left: 130px;
+  border-left: solid 1px lightgray;
+  border-right: solid 1px lightgray;
+}
+
+.icon-search {
+  margin-top: 30px;
 }
 
 .navbar {
-  padding: 30px;
+  padding: 25px;
   overflow: hidden;
 }
 
@@ -65,42 +99,84 @@ overflow: hidden;
 }
 /*End Navigation row*/
 
+.hero-row {
+  text-align: center;
+  padding: 30px;
+}
+
+/*Carousel row*/
 .carousel-row {
   background-color: darkgray;
 }
 
+.icon-backward2 {
+  float: right;
+  margin-top: 295px;
+}
+
+.icon-forward3 {
+  margin-top: 295px;
+}
+
 .myCarousel {
-  padding: 220px;
+  padding: 180px;
+  text-align: center;
+}
+/*End Carousel row*/
+
+/*Main body*/
+.body-container {
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .feature {
   margin-top: 50px;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   background-color: white;
 }
 
 .featureBottom {
-  /*margin: 10px;*/
+  margin-left: 1px;
+  margin-right: 1px;
+  text-align: center;
   padding: 10px;
   background-color: lightgray;
 }
 
-img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.featureSocial {
+  border-left: solid 1px darkgray;
+  border-right: solid 1px darkgray;
 }
 
 .myButtons {
-  margin-left: 450px;
+  text-align: center;
+}
+
+.toggle {
+  margin-top: 25px;
+}
+
+.readMore {
+  background-color: #b0c4de;
+  border: none;
+  color: #3f3f7f;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .ad {
-  margin: 40px;
+  margin: 60px;
   padding: 20px;
   background-color: white;
+  text-align: center;
+}
+
+.socialAd {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .socialMedia {
@@ -111,44 +187,78 @@ img.center {
   height: 150px;
 }
 
+.subscribe {
+  margin-top: 20px;
+}
+
+.newsletterSubscribe {
+  background-color: #b0c4de;
+  border: none;
+  color: #3f3f7f;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .adIcon {
   margin: 10px;
   float: left;
 }
+/*End Main body*/
 
-.subscribe-row {
-  background-color: pink;
+/*Pledge row*/
+.pledge-row {
+  padding: 60px;
+  background-color: white;
 }
 
+.pledgeCenter {
+  border-left: solid 1px lightgray;
+  border-right: solid 1px lightgray;
+}
+
+.pledge-form {
+  text-align: center;
+}
+
+.pledge {
+  text-align: center;
+}
+
+.pledgeButton {
+  background-color: #b0c4de;
+  border: none;
+  color: #3f3f7f;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.toTop {
+  margin-left: 65px;
+}
+/*End Pledge row*/
+
 .instagram-row {
+  padding: 100px;
   background-color: darkgray;
+  text-align: center;
+}
+
+.winterInsta {
+  background-color: #b0c4de;
+  border: none;
+  color: #3f3f7f;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .footer-row {
-  background-color: pink;
-}
-
-.navigation-left {
-  float: right;
-}
-
-.navigation {
-  text-align: center;
-}
-
-.navigation-right {
-  float: left;
-}
-
-.carousel {
-  text-align: center;
-}
-
-.body-container {
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
-p {
-  text-align: center;
+  padding: 10px;
+  background-color: white;
 }

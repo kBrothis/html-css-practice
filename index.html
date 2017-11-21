@@ -3,15 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>Assignment 2</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/icomoon-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
   </head>
   <body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-search" viewBox="0 0 32 32">
+    <title>search</title>
+    <path d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
+    </symbol>
+    <symbol id="icon-plus" viewBox="0 0 32 32">
+    <title>plus</title>
+    <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+    </symbol>
+    <symbol id="icon-backward2" viewBox="0 0 32 32">
+    <title>backward2</title>
+    <path d="M18 5v10l10-10v22l-10-10v10l-11-11z"></path>
+    </symbol>
+    <symbol id="icon-forward3" viewBox="0 0 32 32">
+    <title>forward3</title>
+    <path d="M16 27v-10l-10 10v-22l10 10v-10l11 11z"></path>
+    </symbol>
+    <symbol id="icon-font-size" viewBox="0 0 32 32">
+    <title>font-size</title>
+    <path d="M2 16h12v4h-4v12h-4v-12h-4zM30 8h-7.867v24h-4.266v-24h-7.867v-4h20z"></path>
+    </symbol>
+    <symbol id="icon-paragraph-left" viewBox="0 0 32 32">
+    <title>paragraph-left</title>
+    <path d="M0 2h32v4h-32zM0 8h20v4h-20zM0 20h20v4h-20zM0 14h32v4h-32zM0 26h32v4h-32z"></path>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 32 32">
+    <title>facebook</title>
+    <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 32 32">
+    <title>instagram</title>
+    <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+    <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+    <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 32 32">
+    <title>twitter</title>
+    <path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+    </symbol>
+    <symbol id="icon-rss" viewBox="0 0 32 32">
+    <title>rss</title>
+    <path d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"></path>
+    </symbol>
+    <symbol id="icon-pinterest" viewBox="0 0 32 32">
+    <title>pinterest</title>
+    <path d="M16 2.138c-7.656 0-13.863 6.206-13.863 13.863 0 5.875 3.656 10.887 8.813 12.906-0.119-1.094-0.231-2.781 0.050-3.975 0.25-1.081 1.625-6.887 1.625-6.887s-0.412-0.831-0.412-2.056c0-1.925 1.119-3.369 2.506-3.369 1.181 0 1.756 0.887 1.756 1.95 0 1.188-0.756 2.969-1.15 4.613-0.331 1.381 0.688 2.506 2.050 2.506 2.462 0 4.356-2.6 4.356-6.35 0-3.319-2.387-5.638-5.787-5.638-3.944 0-6.256 2.956-6.256 6.019 0 1.194 0.456 2.469 1.031 3.163 0.113 0.137 0.131 0.256 0.094 0.4-0.106 0.438-0.338 1.381-0.387 1.575-0.063 0.256-0.2 0.306-0.463 0.188-1.731-0.806-2.813-3.337-2.813-5.369 0-4.375 3.175-8.387 9.156-8.387 4.806 0 8.544 3.425 8.544 8.006 0 4.775-3.012 8.625-7.194 8.625-1.406 0-2.725-0.731-3.175-1.594 0 0-0.694 2.644-0.863 3.294-0.313 1.206-1.156 2.712-1.725 3.631 1.3 0.4 2.675 0.619 4.106 0.619 7.656 0 13.863-6.206 13.863-13.863 0-7.662-6.206-13.869-13.863-13.869z"></path>
+    </symbol>
+    </defs>
+    </svg>
+
 
 <!-- Navigation       -->
     <div class="row navigation-row">
       <div class="col-md-3">
-        icon
+        <svg class="icon icon-paragraph-left"><use xlink:href="#icon-paragraph-left"></use></svg>
       </div>
 
       <div class="col-md-6 navbar">
@@ -22,39 +75,43 @@
           <a href="javascript:void(0);">COMMUNICATE</a>
           <a href="javascript:void(0);">WATCH</a>
         </div>
-
       </div>
 
       <div class="col-md-3">
-        <input type="form" name="" value="">
-
+        <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
       </div>
     </div><!--End of Navigation-->
 
 <!-- Hero       -->
     <div class="row hero-row">
       <div class="col-md-12">
-        <p>Social media links here</p>
+          <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+          <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+          <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+          <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
+          <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+          <svg class="icon icon-font-size"><use xlink:href="#icon-font-size"></use></svg>
+          <svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>
         <p>---------- get your shovels out & prepare your 72 hour kit ----------</p>
         <h1 class="text-center">Winter Is Coming</h1>
 
       </div>
     </div><!--Hero-->
 
-<!-- Features/content carousel       -->
+<!-- Carousel       -->
     <div class="row carousel-row">
-      <div class="col-md-3">
-        icon
+      <div class="col-md-1">
+        <svg class="icon icon-backward2"><use xlink:href="#icon-backward2"></use></svg>
       </div>
-      <div class="col-md-6 myCarousel">
+      <div class="col-md-10 myCarousel">
         <h2 class="text-center">Game of Thrones: A Relatively Entertaining Show<br />With A Poignant Episode About Winter</h2>
         <p class="text-center">With literally hundreds of episodes to choose from<br />"Winter is Coming" breaks the mold and<br />ups the ante in fanatic devotion.</p>
-        <button type="button" name="button">Read More</button>
+        <button type="button" name="button" class="readMore">READ MORE</button>
       </div>
-      <div class="col-md-3">
-        icon
+      <div class="col-md-1">
+        <svg class="icon icon-forward3"><use xlink:href="#icon-forward3"></use></svg>
       </div>
-    </div><!--End of Features/content carousel-->
+    </div><!--End of Carousel-->
 
 <!-- Main body       -->
     <div class="body-container">
@@ -74,81 +131,109 @@
       <div class="row main-body-2">
         <div class="col-md-8">
           <article class="feature">
-            <img src="images/Barriers.jpg" alt="Image" class="center" width="980">
+            <img src="images/Barriers.jpg" alt="Image" class="center" width="992">
               <div class="myButtons">
-                <button type="button" name="button">Travel</button>*
-                <button type="button" name="button">Travel</button>
+                <button type="button" name="button">Overcome</button>
+                <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                <button type="button" name="button">Conquer</button>
               </div>
             <h3 class="text-center">Formidable Obstacles</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="row featureBottom">
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <p class="text-center">April 20, 1969</p>
               </div>
-              <div class="col-md-4">
-                Social media icons
+              <div class="col-md-6 featureSocial">
+                <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+                <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+                <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
+                <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                <svg class="icon icon-font-size"><use xlink:href="#icon-font-size"></use></svg>
+                <svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>
               </div>
-              <div class="col-md-4">
-                <button type="button" name="button">Read More...</button>
+              <div class="col-md-3">
+                <button type="button" name="button" class="readMore">READ MORE</button>
               </div>
             </div>
 
           </article>
           <article class="feature">
-            <img src="images/Shovel.jpg" alt="Image" class="center" width="980">
+            <iframe width="992" height="515" src="https://www.youtube.com/embed/o4rWl_ZxqNA" frameborder="0" allowfullscreen></iframe>
               <div class="myButtons">
-                <button type="button" name="button">Travel</button>*
-                <button type="button" name="button">Travel</button>
+                <button type="button" name="button">Overcome</button>
+                <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                <button type="button" name="button">Conquer</button>
               </div>
-            <h4 class="text-center">Formidable Tasks</h4>
+            <h4 class="text-center">Formidable Landscapes</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="row featureBottom">
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <p class="text-center">April 20, 1969</p>
               </div>
-              <div class="col-md-4">
-                Social media icons
+              <div class="col-md-6 featureSocial">
+                <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+                <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+                <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
+                <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                <svg class="icon icon-font-size"><use xlink:href="#icon-font-size"></use></svg>
+                <svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>
               </div>
-              <div class="col-md-4">
-                <button type="button" name="button">Read More...</button>
+              <div class="col-md-3">
+                <button type="button" name="button" class="readMore">READ MORE</button>
               </div>
             </div>
           </article>
           <article class="feature">
-            <img src="images/Travel.jpg" alt="Image" class="center" width="980">
+            <img src="images/Travel.jpg" alt="Image" class="center" width="992">
               <div class="myButtons">
-                <button type="button" name="button">Travel</button>*
-                <button type="button" name="button">Travel</button>
+                <button type="button" name="button">Overcome</button>
+                <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                <button type="button" name="button">Conquer</button>
               </div>
             <h4 class="text-center">Getting Through It</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="row featureBottom">
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <p class="text-center">April 20, 1969</p>
               </div>
-              <div class="col-md-4">
-                Social media icons
+              <div class="col-md-6 featureSocial">
+                <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+                <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+                <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
+                <svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+                <svg class="icon icon-font-size"><use xlink:href="#icon-font-size"></use></svg>
+                <svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>
               </div>
-              <div class="col-md-4">
-                <button type="button" name="button">Read More...</button>
+              <div class="col-md-3">
+                <button type="button" name="button" class="readMore">READ MORE</button>
               </div>
             </div>
           </article>
-          <div class="row">
-            <div class="col-md-12">
-              <p><< Newer Posts  /  Older Posts>></p>              
-            </div>
 
+          <div class="row toggle">
+            <div class="col-md-12">
+              <p><< Newer Posts  /  Older Posts>></p>
+            </div>
           </div>
           </div>
+
           <div class="col-md-4">
             <article class="ad">
               <img src="images/KeepCalm.jpg" alt="Keep Calm" class="center">
             </article>
             <article class="ad">
-              Share
-              Icons
-              Follow
+              <h4 class="text-center">----- Share On -----</h4>
+              <div class="socialAd">
+                FOLLOW ME   >
+                <svg class="icon icon-pinterest"><use xlink:href="#icon-pinterest"></use></svg>
+                <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+                <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+                <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+              </div>
             </article>
             <article class="ad">
               <h4 class="text-center">----- Share On -----</h4>
@@ -156,13 +241,15 @@
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
               <a href="javascript:void(0);">Read More</a>
               <img src="images/JohnHancock.png" alt="John Hancock" class="center" width="250">
-              Social media links
+              <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+              <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+              <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
             </article>
             <article class="ad">
               <h4 class="text-center">----- Share On -----</h4>
-              <form class="" action="index.html" method="post">
-                <input type="text" name="" value="">
-                <button type="button" name="button">Subscribe</button>
+              <form class="subscribe" action="index.html" method="post">
+                <input type="text" name="" placeholder="Email Address">
+                <button type="button" name="button" class="newsletterSubscribe">Subscribe</button>
               </form>
             </article>
             <article class="ad">
@@ -179,47 +266,41 @@
               <br />
               <img src="images/icon.jpg" alt="Wolf icon" class="adIcon" width="100">
               <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-
-
-
-
             </article>
           </div>
         </div>
     </div>
     </div><!--End of Main body-->
 
-<!-- Subscribe       -->
-    <div class="row subscribe-row">
+<!-- Pledge       -->
+    <div class="row pledge-row">
       <div class="col-md-5">
-        <p class="logo">Content</p>
-
+        <h1 class="text-center">Winter Is Coming</h1>
       </div>
-      <div class="col-md-4">
-        <p class="subscribe-form">Content</p>
-
+      <div class="col-md-4 pledgeCenter">
+        <p class="pledge-form">Sign the pledge to commit to winter preparedness.</p>
+        <form class="pledge" action="index.html" method="post">
+          <input type="text" name="" value="">
+          <button type="button" name="button" class="pledgeButton">PLEDGE</button>
+        </form>
       </div>
       <div class="col-md-3">
-        <p class="target-link">Content</p>
-
+        <a href="#"><img src="images/toTop.jpg" alt="To Top" width="75px;" class="toTop"></a>
       </div>
     </div><!--End of Subscribe-->
 
 <!-- Instagram       -->
     <div class="row instagram-row">
       <div class="col-md-12">
-        <p class="instagram-link">Content</p>
-
+        <button type="button" name="button" class="winterInsta">WINTER INSTAGRAM</button>
       </div>
     </div><!--End of Instagram-->
 
 <!-- Footer       -->
     <div class="row footer-row">
       <div class="col-md-12">
-        <p class="footer-content">Content</p>
-
+        <p>©2017 - Alt Right Society. Designed and Developed by A Village</p>
       </div>
     </div><!-- <End of Footer> -->
-
   </body>
 </html>
