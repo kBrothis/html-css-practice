@@ -350,3 +350,120 @@ header h1
 		margin: 0 0 0 20px;
 	}
 }
+
+/*main section*/
+.main
+{
+	margin-top: 1em;
+}
+
+.photo-with-info
+{
+	background-color: white;
+	color: black;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.photo-with-info iframe
+{
+	width: 100%;
+}
+
+.photo-text
+{
+	border: 1px solid lightgrey;
+}
+.photo-text h4
+{
+	margin-top: 1em;
+	font-size: 80%
+}
+.photo-text span
+{
+	color: green;
+	border: 1px solid green;
+	border-radius: 2px;
+	padding: 4px 12px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.photo-text h3
+{
+	font-size: 100%;
+	padding: 0 10px;
+	font-weight: bold;
+}
+
+.photo-text p
+{
+	font-size: 60%;
+	font-weight: normal;
+	padding: 0 5px;
+}
+
+.link-bar
+{
+	background-color: #F9F9F9;
+	margin: 0 2px;
+}
+.link-bar ul
+{
+	margin-top: 1em;
+	padding: 0;
+}
+
+.link-bar ul a:link
+{
+	color: grey;
+}
+
+.link-bar ul a:visted
+{
+	color: green;
+}
+
+.link-bar p
+{
+	font-size: 30%;
+	margin-top: 2em;
+	border: 1px solid lightgrey;
+}
+
+.link-bar span
+{
+	/*font-size: 40%;*/
+	padding: 0;
+	margin-right: 0;
+	background-color: green;
+	color: white;
+	float: right;
+}
+
+.link-bar .read-more p
+{
+	padding: 0;
+	text-align: center;
+}
+
+.link-bar .read-more span
+{
+	text-align: right;
+	margin-right: -5px;
+}
+
+.new-and-old
+{
+	text-align: center;
+}
+
+.new-and-old a:link
+{
+	color: white;
+}
+
+.new-and-old a:visted
+{
+	color: green;
+}
