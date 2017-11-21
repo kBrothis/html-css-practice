@@ -32,6 +32,14 @@ h3 {
   padding: 10px;
 }
 
+.blog-icons {
+  position: absolute;
+  top: 20px;
+  left: 38%;
+  color: #a8a8a8;
+  font-size: 15px;
+}
+
 
 /* NAVBAR */
 
@@ -52,7 +60,8 @@ header {
 /* CAROUSEL */
 
 .jumbotron {
-  height: 450px;
+  height: 400px;
+  padding: 0;
 }
 
 .jumbotron .btn {
@@ -62,29 +71,45 @@ header {
 
 /* IMAGE LINKS */
 
+.image-links {
+  margin-top: 30px;
+  margin-bottom: 30px;  
+}
+
 .image {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+.html {
+  background-image: url('../assets/grey.jpg');
+}
+
+.javascript {
+  background-image: url('../assets/grey.jpg');
+}
+
+.c-sharp {
+  background-image: url('../assets/grey.jpg');
 }
 
 .image-links h4 {
-  position: absolute;
-  top: 35%;
-  left: 38%;
   padding: 20px;
-  border: 1px solid #e5e5e5;
   background-color: #565656;
+  border: 1px solid #e5e5e5;
   color: #e5e5e5;
+  display: inline-block
 }
-
 
 
 /* BLOG */
 
-/* check all this stuff */
-
 .blog-post {
   background-color: #ffffff;
+  padding-top: 30px;
 }
 
 .blog-image {
@@ -109,25 +134,50 @@ header {
 }
 
 .blog-footer {
+  position: relative;
   font-size: 13px;
   color: #979797;
   background-color: #f9f9f9;
   box-shadow: 0 2px 2px -2px #a8a8a8;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
+/* combine next two/three sections? */
+
 .blog-post-date, .blog-post-readmore {
   border: 1px solid #979797;
-  padding: 5px;
+  padding: 8px;
   letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.blog-tag {
+  font-size: 13px;
+  color: #979797;
+  border: 1px solid #979797;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.diam {
+  font-size: 10px;
+  color: #979797;
+  padding-right: 10px;
 }
 
 
 /* SIDEBAR */
-
-/* check all this stuff */
 
 section {
   background-color: #ffffff;
@@ -162,6 +212,7 @@ section {
 }
 
 .subscribe {
+  margin-top: 10px;
   letter-spacing: 1px;
 }
 
@@ -173,7 +224,9 @@ footer {
 }
 
 .footer-top {
-  padding: 40px;
+  padding: 30px;
+  padding-left: 100px;
+  padding-top: 60px;
 }
 
 .jump-button {
