@@ -9,6 +9,13 @@ body
 	color: white;
 }
 
+h1
+{
+	font-family: 'Tangerine', cursive;
+	font-size: 400%;
+	font-weight: bold;
+	margin: 0;
+}
 
 ul
 {
@@ -35,7 +42,7 @@ a:link
 
 a:visted
 {
-	color: green;
+	color: #22BB66;
 }
 
 /*navbar*/
@@ -99,7 +106,7 @@ header
 {
 	text-align: center;
 	padding: 1em;
-	font-family: 'Tangerine', cursive;
+	
 }
 
 header ul li
@@ -120,7 +127,7 @@ header h3
 header hr
 {
 	display: inline-block;
-	color: green;
+	color: #22BB66;
 	margin: 0;
 	border-width: 1px;
 	border-style: solid;
@@ -391,8 +398,8 @@ header h1
 }
 .photo-text span
 {
-	color: green;
-	border: 1px solid green;
+	color: #22BB66;
+	border: 1px solid #22BB66;
 	border-radius: 2px;
 	padding: 4px 12px;
 	margin-left: 4px;
@@ -431,7 +438,7 @@ header h1
 
 .link-bar ul a:visted
 {
-	color: green;
+	color: #22BB66;
 }
 
 .link-bar p
@@ -446,7 +453,7 @@ header h1
 	/*font-size: 40%;*/
 	padding: 0;
 	margin-right: 0;
-	background-color: green;
+	background-color: #22BB66;
 	color: white;
 	float: right;
 }
@@ -505,6 +512,11 @@ header h1
 	margin: 10px 0;
 }
 
+.share-on p
+{
+	padding: 1em;
+}
+
 .share-on-decoration
 {
 	padding-top: 1px;
@@ -516,7 +528,7 @@ header h1
 	width: 80%;
 	margin-bottom: -10px;
 }
-.share-on-decoration p
+.share-on .share-on-decoration h4
 {
 	background: white;
 	width: 30%;
@@ -524,6 +536,8 @@ header h1
 	margin-left: 35%;
 	margin-top: -18px;
 	box-shadow: 1px 0 0 10px white; 
+	font-size: 100%;
+	padding: 3px 0;
 }
 
 .share-on ul
@@ -537,26 +551,25 @@ header h1
 	text-align: left;
 }
 
-.share-on a
+.share-on .follow-me a
 {
 	padding: 3px;
 	color: white;
 	display: inline-block;
 	height: 20px;
 	width: 20px;
-	line-height: 10%;
 }
 
 
-.share-on a:link
+.share-on .follow-me a:link
 {
 	background-color: black;
 	border-radius: 10px;
 }
 
-.share-on a:visited
+.share-on .follow-me a:visited
 {
-	background-color: green;
+	background-color: #22BB66;
 	text-decoration: none;
 	border-radius: 10px;
 }
@@ -565,4 +578,46 @@ header h1
 	font-size: 50%;
 	border: none;
 	background-color: white;
+}
+
+.share-on .read-more
+{
+	background-color: white;
+	color: #22BB66;
+	text-decoration: underline;
+	width: 100%;
+}
+
+.share-on .regular-icons
+{
+	margin-top: 1em;
+}
+
+.share-on .regular-icons a:link
+{
+	color: black;
+}
+
+.share-on h1
+{
+	margin-top: 0.25em;
+	color: black;
+}
+
+.share-on .submit-box
+{
+	background-color: #F9F9F9;
+	border: none;
+	color: lightgrey;
+	width: 80%
+}
+
+.share-on .submit-button
+{
+	width: 80%;
+	background-color: #22BB66;
+	border: none;
+	border-radius: 2px;
+	margin-bottom: 1em;
+	color: white;
 }
