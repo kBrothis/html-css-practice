@@ -24,9 +24,18 @@
 
 
 /* remove all decoration caused by mouse */
-:hover. :visited, :active, :focus {
+
+[class^="icon-"]:visited,[class^="icon-"]:hover, [class^="icon-"]:active{
+  color: white;
   text-decoration: none;
 }
+
+a, a:link, a:visited, a:hover, a:active {
+
+  text-decoration: none;
+}
+
+
 /* generics */
 body {
   background-image:url("../resources/img/background.png"); */
@@ -36,10 +45,6 @@ body {
 
 * {box-sizing: border-box;}
 
-a:hover {
-  color: rgb(104, 201, 80);
-  text-decoration: none;
-}
 a:visited {
   color: #8b8b8b;
 }
@@ -58,8 +63,10 @@ main footer {
   position: absolute;
 }
 
-aside { position: absolute;
+aside {
+  position: absolute;
   padding: 200px;
+
 }
 iframe {height: 480px;}
 
@@ -78,12 +85,14 @@ background-color: transparent;
 
 /*aside */
 .aside-box {
-  /*background-color: #fff;*/
-  position: relative;
-  padding: 10px 0;
-  margin: 50px auto;
+/*background-color: deeppink;*/
+  /*position: relative;*/
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin: 25px auto;
   /*min-height: 300px;*/
-  width: 350px;
+  max-width: 350px;
+
 }
 
 .aside-box > hr {
@@ -93,9 +102,27 @@ background-color: transparent;
   margin-top:  0;
 }
 
+.aside-box img{
+    max-width: 200px;
+}
+.follow-box .aside-box-text {
 
-.aside-box img {
-  max-width: 200px;
+}
+.follow-box .aside-box-text p {
+  text-align: left;
+  color:blue;
+  height: 200px;
+  overflow-y: scroll;
+  margin: 10px auto;
+  padding: 10px;
+
+}
+
+.aside > input.form-control {
+  margin: 10px;
+}
+
+.aside-box > img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -108,8 +135,9 @@ background-color: transparent;
 .aside-txt {
   height: auto;
   top: 50px;
-  background-color: #fff;
+  background-color:#e8e8e8;
   border-radius: 5px;
+  opacity: 1;
 }
 
 
@@ -140,10 +168,19 @@ background-color: transparent;
   padding: 0;
   margin-top: 0;
 }
-.navbar {background-color: transparent;}
-.nav .navbar-nav > ul > li > a {color: #000}
+.navbar {background-color: transparent; border-color: #000; }
+/*.nav .navbar-nav > ul > li > a {color: #000}*/
 .navbar-default {margin-top: 10px;}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #000;
+}
 
+.navbar-default .navbar-nav > .active > a{
+  color: #fff;
+  background-color: transparent;
+}
 /*carousel*/
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -262,12 +299,13 @@ span.bullet {
   padding-right:2px;
   font-size: 1.5em;
   margin-top: 4px;
+  padding-left: 5px;
+
 }
 .arrow-box-text {
   background-color: #fff;
   float: left;
   padding: 5px;
-  /*width:100px;*/
 }
 
 .arrow-box-text p {
@@ -276,24 +314,20 @@ span.bullet {
 }
 
 
-
 /*media quieries*/
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
   .navbar-default {border-radius: 10px;}
 
-  .main-icons > .icons > a, aside, date {
+   aside, date, .arrow-box {
     display: none;
   }
   .main-text  {
     height: 200px;
     overflow: scroll;
   }
-  .arrow-box {
-    width: 70%;
-    /*margin: 0;*/
-  }
+
   .navbar-default {padding-top: 0;}
 
   .tag-rule {width:20%;}
