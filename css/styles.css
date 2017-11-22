@@ -54,6 +54,13 @@ button
 	border-radius: 2px;
 }
 
+.image-wrapper
+{
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
 /*navbar*/
 /*still need to figure out how to make it go across the entire top*/
 nav
@@ -79,10 +86,6 @@ nav ul
 	margin-top: 1em;
 }
 
-nav .nav-ul
-{
-	padding: 0 -15px;
-}
 
 .hamburger
 {
@@ -115,7 +118,6 @@ header
 {
 	text-align: center;
 	padding: 1em;
-	
 }
 
 header ul li
@@ -136,10 +138,10 @@ header h3
 header hr
 {
 	display: inline-block;
-	color: #22BB66;
 	margin: 0;
 	border-width: 1px;
 	border-style: solid;
+	border-color: #22BB66;
 	width: 20%;
 	padding: 0;
 }
@@ -159,53 +161,48 @@ header h1
 	height: 130px;
 }
 
-.carousel img
+.carousel .image-wrapper
+{
+	background-image: url("../images/banner-snow.png");
+	padding-top: 50%;
+}
+
+.carousel-overlay
 {
 	position: absolute;
-	width: 100%;
-	left:0;
-	display: inline-block;
+	top:20%;
 }
-.button-box
-{
-	position: absolute;
-	margin-top: 40px;
-	z-index: 20;
-}
+
 .carousel .icon-circle-left, .icon-circle-right
 {
 	padding: 1px;
 	background-color: grey;
 	border-radius: 5px;
 	text-align: center;
+	margin-top: 90%;
 }
 
 .carousel h2
 {
-	position: absolute;
 	text-align: center;
-	z-index: 20;
 	font-size: 60%;
-	padding: 0 10px;
 	text-shadow: 1px 0 1px black;
+	margin-top: 0;
+	top:30%;
 
 }
 
 .carousel p
 {
-	position: absolute;
-	z-index: 20;
+
 	text-align: center;
 	text-shadow: 1px 0 1px black;
 	font-size: 40%;
-	margin-top: 40px;	
 }
 
 .carousel button
 {
-	position: absolute;
-	z-index: 20;
-	margin-top: 80px;
+
 	text-align: center;
 	background-color: #22BB66;
 	font-size: 30%;
@@ -237,10 +234,6 @@ header h1
 	.carousel
 	{
 		height: 200px;
-	}
-	.button-box
-	{
-		margin-top: 75px;
 	}
 
 	.carousel .icon-circle-left, .icon-circle-right
@@ -286,10 +279,7 @@ header h1
 	{
 		height: 400px;
 	}
-	.button-box
-	{
-		margin-top: 200px;
-	}
+
 	.carousel .icon-circle-left, .icon-circle-right
 	{
 		font-size: 400%;
