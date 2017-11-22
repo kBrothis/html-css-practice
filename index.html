@@ -29,17 +29,17 @@
       <!-- Nav Links -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#"><span class="glyphicon glyphicon-align-left"></span></a></li>
+          <li><a href="javascript:void();"><span class="glyphicon glyphicon-align-left"></span></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-center">
-          <li><a href="#">MAIN<span class="caret"></span></a></li>
-          <li><a href="#">DEMOS</a></li>
-          <li><a href="#">PORTFOLIOS</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">SHORTCODES</a></li>      
+          <li><a href="javascript:void();">MAIN<span class="caret"></span></a></li>
+          <li><a href="javascript:void();">DEMOS</a></li>
+          <li><a href="javascript:void();">PORTFOLIOS</a></li>
+          <li><a href="javascript:void();">BLOG</a></li>
+          <li><a href="javascript:void();">SHORTCODES</a></li>      
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+          <li><a href="javascript:void();"><span class="glyphicon glyphicon-search"></span></a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -49,8 +49,15 @@
   
   <!-- Header -->
   
-  <header class="row text-center">
-    <p class="icons header-icons">&#xea90; &nbsp; &#xea86; &nbsp; &#xea92; &nbsp; &#xea96; &nbsp; &#xeaa0; &nbsp; &#xeab0;</p>
+  <header class="text-center">
+    <p class="icons header-icons">
+      <a href="https://www.facebook.com">&#xea90;</a> &nbsp;
+      <a href="https://www.twitter.com">&#xea96;</a> &nbsp;
+      <a href="https://www.instagram.com">&#xea92;</a> &nbsp;
+      <a href="https://www.vimeo.com">&#xeaa0;</a> &nbsp;
+      <a href="https://www.github.com">&#xeab0;</a> &nbsp;
+      <a href="https://www.google.com/gmail/">&#xea86;</a> &nbsp;
+    </p>
     <h4><em>Beginning the Techtonic Experience</em></h4>
     <h1>Techtonic Academy</h1>
   </header>
@@ -59,10 +66,10 @@
   
   <!-- image to replace carousel on small screens -->
   <div class="row">
-    <img src="assets/code_footer.jpg" alt="" class="carousel-image img-responsive">
+    <img src="assets/code_footer.jpg" alt="" class="carousel-image hidden-sm hidden-md hidden-lg img-responsive">
   </div>
   
-  <div id="myCarousel" class="row carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="row carousel slide hidden-xs" data-ride="carousel">
     
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -72,7 +79,7 @@
           <div class="carousel-caption">
             <h2>Example Headline</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Read More</a></p>
+            <p><a class="btn btn-lg btn-primary" href="javascript:void();" role="button">Read More</a></p>
           </div>
         </div>
       </div>
@@ -83,7 +90,7 @@
           <div class="carousel-caption">
             <h2>Example Headline</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Read More</a></p>
+            <p><a class="btn btn-lg btn-primary" href="javascript:void();" role="button">Read More</a></p>
           </div>
         </div>
       </div>
@@ -94,7 +101,7 @@
           <div class="carousel-caption">
             <h2>Example Headline</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Read More</a></p>
+            <p><a class="btn btn-lg btn-primary" href="javascript:void();" role="button">Read More</a></p>
           </div>
         </div>
       </div>
@@ -114,22 +121,21 @@
   <div class="container">
     
     <!-- Image Links -->
-    
-    <div class="row image-links">
-      <div class="center-block">
+    <div class="row">
+      <div class="row image-links">
         <div class="col-md-4">
           <div class="image html">
-            <a href=""><h4>HTML</h4></a>
+            <a href="javascript:void();"><h4>HTML</h4></a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="image javascript">
-            <a href=""><h4>JavaScript</h4></a>
+            <a href="javascript:void();"><h4>JavaScript</h4></a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="image c-sharp">
-            <a href=""><h4>C#</h4></a>
+            <a href="javascript:void();"><h4>C#</h4></a>
           </div>
         </div>
       </div>
@@ -138,23 +144,29 @@
     <!-- Blog Posts -->
     
     <div class="row">
-      <div class="blog col-md-8">
+      <div class="col-md-8">
         <article class="text-center">
           <div>
-            
             <img src="assets/grey.jpg" alt="" class="img-responsive blog-media">
           </div>
           <div class="blog-post">
-            <span class="blog-tag">HTML</span>
+            <span class="blog-button blog-tag">HTML</span>
             <span class="diam">&diams;</span>
-            <span class="blog-tag">CSS</span>
+            <span class="blog-button blog-tag">CSS</span>
             <h3>This is just a sentence to use as an example of a placeholder blog post title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="blog-footer">
-            <span class="blog-post-date pull-left">MARCH 20, 2017</span>
-            <span class="icons blog-icons">&#xea90; &nbsp; &#xea86; &nbsp; &#xea92; &nbsp; &#xea96; &nbsp; &#xeaa0; &nbsp; &#xeab0;</span>
-            <span class="blog-post-readmore pull-right">READ MORE</span>
+            <span class="blog-button pull-left">MARCH 20, 2017</span>
+            <span class="icons blog-icons hidden-xs">
+              <a href="https://www.facebook.com">&#xea90;</a> &nbsp;
+              <a href="https://www.twitter.com">&#xea96;</a> &nbsp;
+              <a href="https://www.instagram.com">&#xea92;</a> &nbsp;
+              <a href="https://www.vimeo.com">&#xeaa0;</a> &nbsp;
+              <a href="https://www.github.com">&#xeab0;</a> &nbsp;
+              <a href="https://www.google.com/gmail/">&#xea86;</a> &nbsp;
+            </span>
+            <span class="blog-button pull-right">READ MORE</span>
           </div>
         </article>
         
@@ -164,16 +176,23 @@
             <iframe class="embed-responsive-item blog-media" src="http://www.youtube.com/embed/Kh_1810ZBcg"></iframe>
           </div>
           <div class="blog-post">
-            <span class="blog-tag">JS</span>
+            <span class="blog-button blog-tag">JS</span>
             <span class="diam">&diams;</span>
-            <span class="blog-tag">jQuery</span>
+            <span class="blog-button blog-tag">jQuery</span>
             <h3>This is just a sentence to use as an example of a placeholder blog post title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="blog-footer">
-            <span class="blog-post-date pull-left">MARCH 20, 2017</span>
-            <span class="icons blog-icons">&#xea90; &nbsp; &#xea86; &nbsp; &#xea92; &nbsp; &#xea96; &nbsp; &#xeaa0; &nbsp; &#xeab0;</span>
-            <span class="blog-post-readmore pull-right">READ MORE</span>
+            <span class="blog-button pull-left">MARCH 20, 2017</span>
+            <span class="icons blog-icons hidden-xs">
+              <a href="https://www.facebook.com">&#xea90;</a> &nbsp;
+              <a href="https://www.twitter.com">&#xea96;</a> &nbsp;
+              <a href="https://www.instagram.com">&#xea92;</a> &nbsp;
+              <a href="https://www.vimeo.com">&#xeaa0;</a> &nbsp;
+              <a href="https://www.github.com">&#xeab0;</a> &nbsp;
+              <a href="https://www.google.com/gmail/">&#xea86;</a> &nbsp;
+            </span>
+            <span class="blog-button pull-right">READ MORE</span>
           </div>
         </article>
         
@@ -182,16 +201,23 @@
             <img src="assets/grey.jpg" alt="" class="img-responsive blog-media">
           </div>
           <div class="blog-post">
-            <span class="blog-tag">Java</span>
+            <span class="blog-button blog-tag">Java</span>
             <span class="diam">&diams;</span>
-            <span class="blog-tag">C++</span>
+            <span class="blog-button blog-tag">C++</span>
             <h3>This is just a sentence to use as an example of a placeholder blog post title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="blog-footer">
-            <span class="blog-post-date pull-left">MARCH 20, 2017</span>
-            <span class="icons blog-icons">&#xea90; &nbsp; &#xea86; &nbsp; &#xea92; &nbsp; &#xea96; &nbsp; &#xeaa0; &nbsp; &#xeab0;</span>
-            <span class="blog-post-readmore pull-right">READ MORE</span>
+            <span class="blog-button pull-left">MARCH 20, 2017</span>
+            <span class="icons blog-icons hidden-xs">
+              <a href="https://www.facebook.com">&#xea90;</a> &nbsp;
+              <a href="https://www.twitter.com">&#xea96;</a> &nbsp;
+              <a href="https://www.instagram.com">&#xea92;</a> &nbsp;
+              <a href="https://www.vimeo.com">&#xeaa0;</a> &nbsp;
+              <a href="https://www.github.com">&#xeab0;</a> &nbsp;
+              <a href="https://www.google.com/gmail/">&#xea86;</a> &nbsp;
+            </span>
+            <span class="blog-button pull-right">READ MORE</span>
           </div>
         </article>
       </div>
@@ -204,9 +230,16 @@
           <h5 class="section-title">ABOUT ME</h5>
           <img src="assets/aboutme-image.jpg" alt="..." class="img-responsive img-circle center-block">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a href="">Read More</a>
+          <a href="javascript:void();">Read More</a>
           <h5>Thing</h5>
-          <div class="icons about-me-icons">&#xea90; &#xea86; &#xea92; &#xea96; &#xeaa0; &#xeab0;</div>
+          <div class="icons about-me-icons">
+            <a href="https://www.facebook.com">&#xea90;</a>
+            <a href="https://www.twitter.com">&#xea96;</a>
+            <a href="https://www.instagram.com">&#xea92;</a>
+            <a href="https://www.vimeo.com">&#xeaa0;</a>
+            <a href="https://www.github.com">&#xeab0;</a>
+            <a href="https://www.google.com/gmail/">&#xea86;</a>
+          </div>
         </section>
         
         <section class="subscribe">
@@ -215,42 +248,49 @@
           <button type="submit" class="btn btn-default subscribe">SUBSCRIBE</button> 
         </section>
         
-        <section class="connect">
+        <section class="connect hidden-xs">
           <h5 class="section-title">LET'S CONNECT</h5>
           <span>FOLLOW ME :</span>
-          <span class="icons connect-icons">&#xea90; &#xea86; &#xea92; &#xea96; &#xeaa0; &#xeab0;</span>
+          <span class="icons connect-icons">
+            <a href="https://www.facebook.com">&#xea90;</a>
+            <a href="https://www.twitter.com">&#xea96;</a>
+            <a href="https://www.instagram.com">&#xea92;</a>
+            <a href="https://www.vimeo.com">&#xeaa0;</a>
+            <a href="https://www.github.com">&#xeab0;</a>
+            <a href="https://www.google.com/gmail/">&#xea86;</a>
+          </span>
         </section>
         
-        <section class="advert">
+        <section class="advert hidden-xs">
           <img src="assets/grey.jpg" alt="" class="img-responsive">
         </section>
         
-        <section class="recent-stories">
+        <section class="recent-stories hidden-xs">
           <h5 class="section-title">RECENT STORIES</h5>
           <div class="media">
             <div class="media-left">
-              <a href="#"><img class="media-object" src="assets/aboutme-image-small.jpg" alt="..."></a>
+              <a href="javascript:void();"><img class="media-object" src="assets/aboutme-image-small.jpg" alt="..."></a>
             </div>
             <div class="media-body">
-              <h5 class="media-heading">This is just a sentence to use as an example of a placeholder blog post title that's fairly long</h5>
+              <h6 class="media-heading">This is just a sentence to use as an example of a placeholder blog post title that's fairly long</h6>
             </div>
           </div>
           
           <div class="media">
             <div class="media-left">
-              <a href="#"><img class="media-object" src="assets/aboutme-image-small.jpg" alt="..."></a>
+              <a href="javascript:void();"><img class="media-object" src="assets/aboutme-image-small.jpg" alt="..."></a>
             </div>
             <div class="media-body">
-              <h5 class="media-heading">This is just a sentence to use as an example of a placeholder blog post title that's fairly long</h5>
+              <h6 class="media-heading">This is just a sentence to use as an example of a placeholder blog post title that's fairly long</h6>
             </div>
           </div>
           
           <div class="media">
             <div class="media-left">
-              <a href="#"><img class="media-object" src="assets/aboutme-image-small.jpg" alt="..."></a>
+              <a href="javascript:void();"><img class="media-object" src="assets/aboutme-image-small.jpg" alt="..."></a>
             </div>
             <div class="media-body">
-              <h5 class="media-heading">This is just a sentence to use as an example of a placeholder blog post title that's fairly long</h5>
+              <h6 class="media-heading">This is just a sentence to use as an example of a placeholder blog post title that's fairly long</h6>
             </div>
           </div>
         </section>
@@ -265,12 +305,12 @@
         <section class="categories">
           <h5 class="section-title">CATEGORIES</h5>
           <ul class="nav nav-stacked text-left">
-            <li><a href="">HTML</a></li>
-            <li><a href="">CSS</a></li>
-            <li><a href="">JavaScript</a></li>
-            <li><a href="">jQuery</a></li>
-            <li><a href="">Java</a></li>
-            <li><a href="">C++</a></li>
+            <li><a href="javascript:void();">HTML</a></li>
+            <li><a href="javascript:void();">CSS</a></li>
+            <li><a href="javascript:void();">JavaScript</a></li>
+            <li><a href="javascript:void();">jQuery</a></li>
+            <li><a href="javascript:void();">Java</a></li>
+            <li><a href="javascript:void();">C++</a></li>
           </ul>  
         </section>
         
@@ -281,19 +321,19 @@
   
   
   <footer class="row">
-    <div class="col-md-4 text-center">
+    <div class="col-xs-12 col-md-4 text-center">
       <h2 class="footer-subtitle">Techtonic Academy</h2>
     </div>
     
-    <div class="col-md-4 footer-subscribe">
-      <h5>Subscribe now to receive our daily updates...</h5>
+    <div class="col-xs-12 col-md-4 footer-subscribe">
+      <p>Subscribe now to receive our daily updates...</p>
       <div class="input-group">
         <input type="email" class="form-control" placeholder="Enter your email here...">
         <span class="input-group-addon subscribe">SUBSCRIBE</span>
       </div>
     </div>
     
-    <div class="col-md-4">
+    <div class="col-xs-12 col-md-4">
       <a href="#" class="footer-button">
         <div class="jump-button">
           <span class="glyphicon glyphicon-chevron-up"></span>
