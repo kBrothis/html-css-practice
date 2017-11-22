@@ -20,8 +20,8 @@ h2 {
 }
 
 h3 {
+  margin-bottom: 0;  
   font-size: 22px;
-  margin-bottom: 0;
 }
 
 a,
@@ -44,8 +44,8 @@ a:visited {
 }
 
 .header-icons {
+  padding: 10px;  
   font-size: 20px;
-  padding: 10px;
 }
 
 .blog-icons {
@@ -105,111 +105,113 @@ header {
 }
 
 .image {
+  display: none;
   padding: 80px 0;
   text-align: center;
   border: 2px solid #fff;
   border-radius: 8px;
-  display: none;
 }
 
 .html {
-  background-image: url('../assets/grey.jpg');
+  background-image: url('../assets/code/code_html_dark.png');
+  background-size: cover;
 }
 
 .javascript {
-  background-image: url('../assets/grey.jpg');
+  background-image: url('../assets/code/code_javascript.png');
+  background-size: cover;
 }
 
 .c-sharp {
-  background-image: url('../assets/grey.jpg');
+  background-image: url('../assets/code/code_c_sharp.png');
+  background-size: cover;  
 }
 
 .image-links h4 {
+  display: inline-block;  
   padding: 20px;
-  background-color: #565656;
-  border: 1px solid #e5e5e5;
-  color: #e5e5e5;
-  display: inline-block
+  color: #000;  
+  background-color: #fff;
+  border: 1px solid #000;
+  opacity: 0.8;  
 }
 
 
 /* BLOG */
 
 .blog-post {
+  padding-top: 30px;  
   background-color: #ffffff;
-  padding-top: 30px;
 }
 
 .blog-media {
+  margin-bottom: 0;  
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  margin-bottom: 0;
 }
-
-.blog-post h3 {
-  padding: 30px 40px;
-  margin-top: 0;
-}
-
-.blog-post p {
-  font-size: 15px;
-  margin-bottom: 0;
-  padding: 0 40px 40px 40px;
-}
-
-.blog-footer {
-  position: relative;
-  font-size: 10px;
-  color: #979797;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 2px -2px #a8a8a8;
-  padding: 10px 20px 50px 20px;
-  margin-bottom: 30px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-/* combine next two/three sections? */
 
 .blog-button {
-  border: 1px solid #979797;
   padding: 8px;
   letter-spacing: 1px;
+  border: 1px solid #979797;  
   border-radius: 4px;
 }
 
 .blog-tag {
-  font-size: 13px;
-  color: #979797;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 13px;
+  color: #979797;
 }
 
 .diam {
+  margin: 0 10px;  
   font-size: 10px;
   color: #979797;
-  margin: 0 10px;
+}
+
+.blog-post h3 {
+  margin-top: 0;  
+  padding: 30px 40px;
+}
+
+.blog-post p {
+  margin-bottom: 0;
+  padding: 0 40px 40px 40px;
+  font-size: 15px;
+}
+
+.blog-footer {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 10px 20px 50px 20px;  
+  font-size: 10px;
+  color: #979797;
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 2px 2px -2px #a8a8a8;  
 }
 
 
 /* SIDEBAR */
 
 section {
-  background-color: #ffffff;
-  padding: 20px;
-  max-width: 400px;
-  border-radius: 8px;
-  border: 1px solid #e5e5e5;
-  box-shadow: 0 2px 2px -2px #a8a8a8;
+  max-width: 400px;  
   margin: 0 auto;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;  
+  border-radius: 8px;
+  box-shadow: 0 2px 2px -2px #a8a8a8;
 }
 
 .section-title {
-  color: #979797;
-  border: 1px solid #e5e5e5;
   padding: 10px;
-  letter-spacing: 1px;
+  color: #979797;
+  letter-spacing: 1px;  
+  border: 1px solid #e5e5e5;
 }
 
 .img-circle {
@@ -223,16 +225,16 @@ section {
 }
 
 .media-heading {
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;  
   color: #565656;
   text-align: left;
   letter-spacing: 0.5px;
 }
 
 .categories a {
+  font-size: 16px;  
   color: #646464;
-  font-size: 16px;
   letter-spacing: 1px;
 }
 
@@ -255,14 +257,14 @@ footer {
 }
 
 .jump-button {
-  color: #eaeaea;
-  background-color: #a8a8a8;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 20px;
   margin: 0 auto;
+  padding-top: 20px;  
+  color: #eaeaea;
+  text-align: center;  
+  background-color: #a8a8a8;
+  border-radius: 50%;
 }
 
 .footer-image {
@@ -290,7 +292,6 @@ footer {
 }
 
 @media only screen and (min-width: 760px) {
-
   h1 {
     font-size: 90px;
   }
@@ -321,5 +322,3 @@ footer {
     padding: 20px;
   }
 }
-
-/* CSS 359 lines */
