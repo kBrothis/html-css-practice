@@ -79,9 +79,7 @@
 }
 
 
-.image-center-screen{
-  margin:  auto 0;
-}
+
 .center{
   align-items: center;
   align-content: center;
@@ -142,6 +140,10 @@ header>div>div{
   position: absolute;
   top: 90px; /*for placing button on top of images, play with top and left, .parent is used by parent div that has img1 at bottom*/
   left: 50px;
+}
+.image-center-screen{
+   position: absolute;
+   margin:  auto 0;
 }
 /* media queries*/
 @media only screen and (max-width: 768px) {
