@@ -621,3 +621,37 @@ header h1
 	margin-bottom: 1em;
 	color: white;
 }
+
+.blog-preview
+{
+	margin-right: 15%;
+	margin-left: 10%;
+}
+.blog-preview img
+{
+	float: left;
+	width: 20%;
+	height: 20%;
+	margin-right: 5%;
+}
+
+.blog-preview p
+{
+	padding-top: 0;
+	font-size: 60%;
+	color: black;
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.blog-preview h5
+{
+	float: left;
+	margin: 0;
+}
+
+.blog-preview .icon
+{
+	color: lightgrey;
+	font-size: 80%;
+}
