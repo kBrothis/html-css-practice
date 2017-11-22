@@ -2,6 +2,7 @@ body{
   background-color: #f0ecec;
   font-family: 'Proza Libre';
   color: #737373;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4{
@@ -88,7 +89,7 @@ form button{
 
 .container{
   width: 80%;
-  min-width: 990px;
+  /*min-width: 990px;*/
   padding: 0;
 }
 
@@ -268,18 +269,6 @@ nav li{
   margin-top: -17.5px
 }
 
-.btn-image:first-child{
-  padding-right: 20px;
-}
-
-.btn-image:nth-child(2){
-  padding: 0 20px;
-}
-
-.btn-image:last-child{
-  padding-left: 20px;
-}
-
 .smile, .laugh, .batman{
   background-size: cover;
   background-repeat: no-repeat;
@@ -418,10 +407,10 @@ footer{
 
 .foot-conts{
   text-align: center;
-  vertical-align: center;
 }
 
 .cont-foot{
+  vertical-align: middle;
   padding: 0 20px;
   width: 33%;
   display: inline-block;
@@ -475,4 +464,199 @@ footer{
   padding: 15px 25px;
   color: white;
   margin-top: 100px;
+}
+
+@media (max-width:767px) {
+  h1{
+    font-size: 3em;
+  }
+
+  i{
+    font-size: 1.4em;
+  }
+
+  .container{
+    width: 90%;
+    padding: 0;
+  }
+
+  .hamburger-nav, .search-nav{
+    display: none;
+  }
+
+  .links{
+    font-size: .8em
+  }
+
+  .links li{
+    width: 17.6%;
+  }
+
+  .social-nav li{
+    width: 15.76%;
+  }
+
+  .logo h3{
+    letter-spacing: 14px;
+    font-size: 18px;
+  }
+
+  .btn-image{
+    margin-bottom: 25px;
+  }
+
+  .btn-image .dark-panel{
+    opacity: 1;
+  }
+
+  .btn-image button{
+    top: 50%;
+    margin-top: -17.5px;
+    width: 36%;
+    margin-left: -18%;
+  }
+
+  .blog-btns{
+    width: 100%;
+  }
+
+  .blog-content h2{
+    font-size: 2em;
+  }
+
+  .social-nav li{
+    width: 15%;
+  }
+
+  .date{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .blog-footer .pull-right{
+    margin-right: 15%;
+  }
+
+  .aside-col{
+    display: none;
+  }
+
+  .cont-foot{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 0;
+  }
+
+  .cont-foot:nth-child(2){
+    margin-bottom: 40px;
+    border: 0
+  }
+
+  .cont-foot button{
+    width: 60%;
+    margin-top: 5px;
+  }
+
+  .cont-foot span{
+    padding: 10px 48px;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width:768px) and (orientation:portrait) {
+  nav li{
+    width: 18.6%;
+  }
+
+  .btn-image{
+    margin-bottom: 25px;
+  }
+
+  .btn-image .dark-panel{
+    opacity: 1;
+  }
+
+  .btn-image button{
+    top: 50%;
+    margin-top: -17.5px;
+    width: 36%;
+    margin-left: -18%;
+  }
+
+  .date{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .blog-footer button{
+    width: 30%;
+    margin-top: 25px;
+    margin-right: 35%;
+  }
+
+  .aside-col{
+    display: none;
+  }
+
+  .cont-foot{
+    padding: 0 5px;
+  }
+
+  .cont-foot input, .cont-foot button{
+    width: 90%;
+  }
+
+  .cont-foot button{
+    margin-top: 10px;
+  }
+}
+
+@media (min-width:768px) and (orientation:landscape) {
+  nav li{
+    width: 18.6%;
+  }
+
+  .social-nav li{
+    width: 15.06%;
+  }
+
+  h1{
+    font-size: 2.9em;
+  }
+
+  .hero-article i{
+    font-size: 1.1em;
+  }
+
+  .logo h3{
+    letter-spacing: 10px;
+  }
+
+  .btn-image .dark-panel{
+    opacity: 1;
+  }
+
+  .btn-image button{
+    top: 50%;
+    margin-top: -17.5px;
+    width: 36%;
+    margin-left: -18%;
+  }
+
+  .smile, .laugh, .batman{
+    height: 175px;
+  }
+
+  .blog-footer button {
+    width: 100%;
+    font-size: 11px;
+  }
+
+  .aside-card button{
+    width: 50%;
+  }
+  .cont-foot button{
+    width: 70%;
+    margin-top: 15px;
+  }
 }
