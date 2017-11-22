@@ -15,6 +15,7 @@ h1
 	font-size: 400%;
 	font-weight: bold;
 	margin: 0;
+	text-align: center;
 }
 
 ul
@@ -43,6 +44,14 @@ a:link
 a:visted
 {
 	color: #22BB66;
+}
+
+button
+{
+	background-color: #22BB66;
+	border: none;
+	color: white;
+	border-radius: 2px;
 }
 
 /*navbar*/
@@ -654,4 +663,103 @@ header h1
 {
 	color: lightgrey;
 	font-size: 80%;
+}
+
+.share-on .search-field
+{
+	width: 80%;
+}
+
+.share-on .search-field button
+{
+	background-color: #22BB66;
+	border: none;
+	color: white;
+	padding-top: 5px;
+	border-radius: 2px;
+}
+
+/*footer*/
+footer
+{
+	background-color: white;
+	color: black;
+	border-top: 1px solid lightgrey;
+}
+footer .subscribe
+{
+	border: 0 1px solid lightgrey;
+}
+
+footer h3
+{
+	text-align: center;
+	font-size: 80%;
+}
+
+footer .subscribe-form
+{
+	width: 80%
+}
+
+footer .submit-box
+{
+	width: 72%;
+	padding: 0;
+	border: none;
+	color: lightgrey;
+	font-size: 70%;
+	background-color: #F9F9F9;
+}
+
+footer .submit-button
+{
+	width: 26%;
+	padding: 0;
+	color: white;
+	border: none;
+	border-radius: 2px;
+	background-color: #22BB66;
+	font-size: 70%
+}
+
+footer .to-top
+{
+	background-color: lightgrey;
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+footer .to-top a:link
+{
+	color: black;
+}
+footer .to-top a:visited
+{
+	color: black;
+}
+
+footer .to-top p
+{
+	padding-top: 10%;
+}
+
+footer .image-wrapper
+{
+	background-image: url("../images/banner-bottom.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-top: 50%;
+	margin: 0;
+}
+
+footer button
+{
+	position: absolute;
+	right:10%;
+	top: 50%;
 }
