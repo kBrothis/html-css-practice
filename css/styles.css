@@ -38,6 +38,7 @@ h3 {
   left: 38%;
   color: #a8a8a8;
   font-size: 15px;
+  display: none;
 }
 
 
@@ -82,6 +83,7 @@ header {
   text-align: center;
   border: 2px solid #fff;
   border-radius: 8px;
+  display: none;
 }
 
 .html {
@@ -112,9 +114,10 @@ header {
   padding-top: 30px;
 }
 
-.blog-image {
+.blog-media {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  margin-bottom: 0;
 }
 
 .blog-post h3 {
@@ -189,7 +192,7 @@ section {
 }
 
 .section-title {
-  color: #a8a8a8;
+  color: #979797;
   border: 1px solid #e5e5e5;
   padding: 10px;
   letter-spacing: 1px;
@@ -201,8 +204,25 @@ section {
   margin-bottom: 20px;
 }
 
+.connect {
+  display: none;
+}
+
 .advert {
   height: 500px;
+  display: none;  
+}
+
+.recent-stories {
+  display: none;
+}
+
+.media-heading {
+  font-weight: bold;
+  font-size: 14px;
+  color: #565656;
+  text-align: left;
+  letter-spacing: 0.5px;
 }
 
 .categories a {
@@ -248,4 +268,17 @@ footer {
 .footer-copyright {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 760px) {
+  .image,
+  .connect,
+  .ad,
+  .recent-stories,
+  .blog-icons {
+    display: block;
+  }
 }
