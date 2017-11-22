@@ -36,7 +36,6 @@ img.center {
 }
 
 .navCenter {
-  /*margin-left: 130px;*/
   padding-left: 130px;
   border-left: solid 1px lightgray;
   border-right: solid 1px lightgray;
@@ -289,4 +288,11 @@ height: 100%;
 .footer-row {
   padding: 10px;
   background-color: white;
+}
+
+@media screen and (max-width: 414px) {
+  .body-container, .navCenter, .myCarousel {
+    margin: 0;
+    padding: 0;
+  }
 }
