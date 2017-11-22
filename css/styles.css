@@ -81,8 +81,14 @@
 
 
 .center{
+  align: center;
   align-items: center;
   align-content: center;
+  text-align: center;
+}
+.bold-green{
+  color: #17bf28;
+  font-weight: 600;
 }
 .lifestyle-image{
   padding: 20px;
@@ -97,6 +103,7 @@
   border: 1px solid #d0d1cd;
   box-shadow: 0px 2px 2px gray;
   border-top: 0;
+  margin-top: 20px;
   margin-left: 20px;
 }
 .articles-title{
@@ -107,6 +114,10 @@
 .articles-image{
   padding-bottom: 30px;
 }
+.youtube-padding{
+  padding: 10px;
+}
+
 .articles-footer{
   background-color: #d0d1cd;
   /*border: 1px solid gray;*/
@@ -121,6 +132,15 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 60px;
+}
+
+.articles-right-text{
+  font-weight: bold;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 30px;
 }
 header>div>div{
   text-align: center;
@@ -138,35 +158,78 @@ header>div>div{
 }
 .image2 {
   position: absolute;
-  top: 90px; /*for placing button on top of images, play with top and left, .parent is used by parent div that has img1 at bottom*/
-  left: 50px;
+  top: 100px; /*for placing button on top of images, play with top and left, .parent is used by parent div that has img1 at bottom*/
+  left: 135px;
 }
 .image-center-screen{
    position: absolute;
    margin:  auto 0;
 }
 /* media queries*/
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+@media (max-width: 768px) {
+    /* For mobile phones:
     display: center; /*this is not doing anything*/
+    /*background-color:red;*/
+    .image2 {
+      position: absolute;
+      top: 70px; /*for placing button on top of images, play with top and left, .parent is used by parent div that has img1 at bottom*/
+      left: 105px;
     }
+
 }
 
 /*testing line in the middle of button solution from:https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle*/
-/*h4 {
+h5 {
    width: 100%;
    text-align: center;
    border-bottom: 1px solid black;
    line-height: 0.1em;
-   margin: 10px 0 20px;
+   margin-top: 20px;
+   /*margin: 10px 0 20px;*/
 }
 
-h4 span {
+h5 span {
     background:#fff;
-    padding:0 10px;
+    /*padding:0 10px;*/
 }
-*/
+
+.text-border{
+  border: 1px solid black;
+  margin-left: 10px;
+  text-align: center;
+}
+
 }
 .img-circle {
     border-radius: 50%;
 }
+/*icons*/
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-pinterest {
+  width: 0.857421875em;
+}
+
+.icon-google-plus-circle {
+  width: 0.857421875em;
+}
+
+.icon-facebook2 {
+  width: 0.587890625em;
+}
+/*icons end*/
