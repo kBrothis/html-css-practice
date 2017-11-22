@@ -1,3 +1,6 @@
+h2{
+  font-weight: lighter;
+}
 .background-color{
   background-color: green;
 }
@@ -32,7 +35,7 @@
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    font-size: 16px;
+    font-size: 10px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 2px;
@@ -57,6 +60,7 @@
 .button-padding-articles-top1{ /*todo: change this to a position that can scale into small screens*/
   float:left;
   margin-left: 50px;
+  /*margin-left: 250px;*/
 }
 .button-padding-articles-top2{ /*todo: change this to a position that can scale into small screens*/
   float:right;
@@ -69,11 +73,13 @@
 }*/
 .button-padding-articles-bottom1{ /*todo: change this to a position that can scale into small screens*/
   /*margin-left: 50px;*/
-  align-items: center;
+  /*align-items: right;*/
+
 }
 .button-padding-articles-bottom2{ /*todo: change this to a position that can scale into small screens*/
   /*margin-left: 100px;*/
-  align-items: center;
+  /*align-items: left;*/
+
 }
 .force-bottom-button-margin{
   margin-left: 50px;
@@ -83,7 +89,9 @@
   padding-bottom: 60px;
 }
 
-
+/*.padding-icons-center-leftArticles{
+  padding-left: 0;
+}*/
 
 .center{
   align: center;
@@ -93,6 +101,10 @@
 }
 .bold-green{
   color: #17bf28;
+  font-weight: 600;
+}
+.bold-gray{
+  color: gray;
   font-weight: 600;
 }
 .lifestyle-image{
@@ -111,10 +123,21 @@
   margin-top: 20px;
   margin-left: 20px;
 }
+.articles-border-right{
+  border: 1px solid #d0d1cd;
+  box-shadow: 0px 2px 2px gray;
+  /*border-top: 0;*/
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
 .articles-title{
   text-align: center;
-  font-weight: bold;
+  /*font-weight: bold;*/
   padding-left: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 20px;
 }
 .articles-image{
   padding-bottom: 30px;
@@ -124,7 +147,7 @@
 }
 
 .articles-footer{
-  background-color: #d0d1cd;
+  background-color: #ebf5f5;
   margin-left: auto;
   margin-right: auto;
   /*border: 1px solid gray;*/
@@ -172,6 +195,52 @@ header>div>div{
    position: absolute;
    margin:  auto 0;
 }
+/*.video-frame{ /*this is doing nothing
+  background-color: red;
+  border: 1px solid #d0d1cd;
+  padding: 5px;
+  padding-top: 80px;
+  height: 350px;
+  width: 700px;
+}*/
+/* Hamburguer menue */
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+
+.navbar-toggle span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle span:nth-child(3) {
+    opacity: 0;
+}
+
+.navbar-toggle span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4) {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed span:nth-child(3) {
+    opacity: 1;
+}
+/* Hamburguer menue ends here*/
+
 /* media queries*/
 @media (max-width: 768px) {
     /* For mobile phones:
@@ -184,6 +253,8 @@ header>div>div{
     }
 
 }
+
+
 
 /*testing line in the middle of button solution from:https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle*/
 h5 {
@@ -250,4 +321,24 @@ Single-colored icons can be modified like so:
 }
 .icon-padding{
   padding-top: 10px;
+}
+
+.display-inline-block{
+  display: inline-block;
+  text-align: left;
+  float:left;
+}
+
+.image-recent-stories-padding{
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+    background-color:#ebf0d9;
+    .articles-tittle{
+      font-size: 10px;
+      color: red;
+    }
+  }
 }
