@@ -216,9 +216,9 @@ h5 span {
   width: 1em;
   height: 1em;
   stroke-width: 0;
-  stroke: red;/*currentColor;*/
-  fill: red;/*currentColor;*/
-  color: red;
+  stroke: #aaa;/*currentColor;*/
+  fill: #aaa;/*currentColor;*/
+  color: #aaa;
 }
 
 /* ==========================================
