@@ -346,11 +346,12 @@ header h1
 .link-bar
 {
 	background-color: #F9F9F9;
-	margin: 0 2px;
+	width: 80%;
+	margin-left: 5%;
 }
 .link-bar ul
 {
-	margin-top: 1em;
+	margin-top: 6%;
 	padding: 0;
 }
 
@@ -366,32 +367,42 @@ header h1
 
 .link-bar p
 {
-	font-size: 30%;
-	margin-top: 2em;
+	font-size: 29%;
+	margin-top: 8%;
 	border: 1px solid lightgrey;
 }
 
 .link-bar span
 {
-	/*font-size: 40%;*/
 	padding: 0;
-	margin-right: 0;
 	background-color: #22BB66;
 	color: white;
 	float: right;
+	margin-right: -5px;
+	border-radius: 0;
 }
 
 .link-bar .read-more p
 {
-	padding: 0;
+	padding: 2% 0 0 0;
 	text-align: center;
 }
 
-.link-bar .read-more span
+
+@media (min-width: 960px)
 {
-	text-align: right;
-	margin-right: -5px;
+	.link-bar p
+	{
+		font-size: 80%;
+		margin-top: 2%; 
+	}
+
+	.link-bar ul
+	{
+		margin-top: 2%;
+	}
 }
+
 
 .new-and-old
 {
@@ -665,8 +676,6 @@ footer .to-top p
 footer .image-wrapper
 {
 	background-image: url("../images/banner-bottom.png");
-	background-size: contain;
-	background-repeat: no-repeat;
 	padding-top: 50%;
 	margin: 0;
 }
@@ -676,4 +685,34 @@ footer button
 	position: absolute;
 	right:10%;
 	top: 50%;
+}
+
+@media (min-width: 960px)
+{
+	footer h1
+	{
+		margin-top: 2%;
+	}
+
+	footer .subscribe
+	{
+		margin-top: 1%;	
+		border-right: 1px;
+		border-left: 1px;
+		border-top: 0;
+		border-bottom: 0;
+		border-style: solid;
+		border-color: grey;
+	}
+
+	footer .to-top
+	{
+		margin-left: 10%;
+	}
+
+	footer button
+	{
+		height: 30px;
+		width: 120px;
+	}
 }
