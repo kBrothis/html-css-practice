@@ -1,40 +1,9 @@
-
-.badge img {
-  max-width: 150px;
-}
-
-.to-top, .inputs{
-  margin-top: 50px;
-}
-
-.to-top span{
-  font-size: 5em;
-}
-
-.instagram-btn {
-  margin: 100px 0;
-}
-
-
-.name-img img{
-  max-width: 100%;
-}
-
-
-
-
 /* remove all decoration caused by mouse */
 
-[class^="icon-"]:visited,[class^="icon-"]:hover, [class^="icon-"]:active{
+[class^="icon-"]:visited,[class^="icon-"]:hover, [class^="icon-"]:active, a, a:link, a:visited, a:hover, a:active{
   color: white;
   text-decoration: none;
 }
-
-a, a:link, a:visited, a:hover, a:active {
-
-  text-decoration: none;
-}
-
 
 /* generics */
 body {
@@ -43,17 +12,10 @@ body {
   text-align: center;
 }
 
-* {box-sizing: border-box;}
-
-a:visited {
-  color: #8b8b8b;
-}
-
 li  {
   opacity: .3;
   color: black;
 }
-ul > li > a  {color #444444;}
 
 ul {padding: 5px;}
 
@@ -65,9 +27,9 @@ main footer {
 
 aside {
   position: absolute;
-  padding: 200px;
-
+  padding: 20px;
 }
+
 iframe {height: 480px;}
 
 /* background */
@@ -81,38 +43,25 @@ background-color: transparent;
   box-shadow: 2px 0px 20px  rgba(256,256,256,.6), 2px 0px 20px  rgba(6, 14, 62, 0.79);
 }
 
-.container { background-color: rgba(0, 0, 0, 0.64) ;}
 
 /*aside */
 .aside-box {
-/*background-color: deeppink;*/
-  /*position: relative;*/
   padding-top: 10px;
   padding-bottom: 15px;
   margin: 25px auto;
-  /*min-height: 300px;*/
   max-width: 350px;
-
 }
 
-.aside-box > hr {
-  border-style: double;
-  border-color: blue;
-  border-top-width: thick;
-  margin-top:  0;
-}
 
 .aside-box img{
     max-width: 200px;
 }
-.follow-box .aside-box-text {
 
-}
 .follow-box .aside-box-text p {
   text-align: left;
   color:blue;
   height: 200px;
-  overflow-y: scroll;
+  overflow: auto;
   margin: 10px auto;
   padding: 10px;
 
@@ -168,8 +117,14 @@ background-color: transparent;
   padding: 0;
   margin-top: 0;
 }
-.navbar {background-color: transparent; border-color: #000; }
-/*.nav .navbar-nav > ul > li > a {color: #000}*/
+.navbar {
+  background-color: transparent;
+  border-radius: 0;
+  border-style: none;
+  margin-left: 28%;
+  padding-top: 25px;
+}
+
 .navbar-default {margin-top: 10px;}
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -177,10 +132,6 @@ background-color: transparent;
   background-color: #000;
 }
 
-.navbar-default .navbar-nav > .active > a{
-  color: #fff;
-  background-color: transparent;
-}
 /*carousel*/
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -191,7 +142,7 @@ background-color: transparent;
 }
 #myCarousel {height: 350px;}
 .item { height: 350px; }
-
+/* center item in carousel */
 .item img {
   max-height: 100%;
   max-width: 100%;
@@ -247,14 +198,16 @@ background-color: transparent;
 }
 
 .main-top img, iframe {width: 100%;}
-
 .main-mid {background-color:#e8e8e8;}
-
 .main-mid button {
   background-color: #fff;
   margin: auto;
   border: #13d902 2px groove;
   color: #13d902;
+}
+
+.main-text p:first-child {
+  font-weight: bold;
 }
 
 .btn-inverse {
@@ -271,9 +224,6 @@ span.bullet {
   color: #13d902;
   display: inline-block;
   vertical-align: middle;
-}
-.main-foot {
-  padding-right: 0;
 }
 
 .date-box {
@@ -313,6 +263,24 @@ span.bullet {
   margin: 0;
 }
 
+/* submit and footer */
+
+.to-top, .inputs{
+  margin-top: 5px;
+}
+
+.to-top span{
+  font-size: 5em;
+}
+
+.instagram-btn {
+  margin: 100px 0;
+}
+
+.name-img img{
+  max-width: 100%;
+}
+
 
 /*media quieries*/
 
@@ -328,6 +296,8 @@ span.bullet {
     overflow: scroll;
   }
 
+  .navbar {margin-left: inherit;}
+
   .navbar-default {padding-top: 0;}
 
   .tag-rule {width:20%;}
@@ -335,7 +305,11 @@ span.bullet {
     background-color: transparent;
   }
   iframe{
-    max-height: 150px;
+    max-height: 350px;
+  }
+
+  p {
+    font-size: 1.5em;
   }
 
   .badge img {
