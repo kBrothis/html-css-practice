@@ -241,38 +241,25 @@ header>div>div{
 }
 /* Hamburguer menue ends here*/
 
-/* media queries*/
-@media (max-width: 768px) {
-    /* For mobile phones:
-    display: center; /*this is not doing anything*/
-    /*background-color:red;*/
-    .image2 {
-      position: absolute;
-      top: 70px; /*for placing button on top of images, play with top and left, .parent is used by parent div that has img1 at bottom*/
-      left: 105px;
-    }
-
-}
 
 
 
-/*testing line in the middle of button solution from:https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle*/
+
+
 h5 {
    width: 100%;
    text-align: center;
-   border-bottom: 1px solid black;
+   border-bottom: 1px solid #eee;
    line-height: 0.1em;
    margin-top: 20px;
-   /*margin: 10px 0 20px;*/
 }
 
 h5 span {
     background:#fff;
-    /*padding:0 10px;*/
 }
 
 .text-border{
-  border: 1px solid black;
+  border: 1px solid #ddd;
   margin-left: 10px;
   text-align: center;
 }
@@ -332,7 +319,49 @@ Single-colored icons can be modified like so:
 .image-recent-stories-padding{
   padding-left: 20px;
 }
+.bg-color-white{
+  background-color:white;
+}
+.bg-color-black{
+  background-color:black;
+}
+.navbar, .navbar-inverse {
+    border-radius: 0;
+    color: black;
+    border: none;
+    margin-bottom: 0;
+    min-height: 80px;
+}
 
+.nav li {
+    background-color: white;
+    display: inline;
+    color: black;
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+    background-color: white;
+    color: black;
+    font-family: Lato;
+    font-size: 1.7em;
+    font-weight: 300;
+    padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.7s all linear;
+    height: 100%;
+}
+
+/* media queries*/
+@media (max-width: 768px) {
+    /* For mobile phones:
+    display: center; /*this is not doing anything*/
+    /*background-color:red;*/
+}
 @media only screen and (max-width: 768px) {
   body{
     background-color:#ebf0d9;
@@ -341,4 +370,16 @@ Single-colored icons can be modified like so:
       color: red;
     }
   }
+  .bg-color-white{
+    background-color:#ebf0d9;
+  }
+  .image2 {
+    position: absolute;
+    top: 70px; /*for placing button on top of images, play with top and left, .parent is used by parent div that has img1 at bottom*/
+    left: 105px;
+  }
+  h5{
+    border-bottom: 0;
+  }
+
 }
