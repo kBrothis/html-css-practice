@@ -2,7 +2,7 @@ h2{
   font-weight: lighter;
 }
 .background-color{
-  background-color: green;
+  background-color:#ebf0d9 ;
 }
 .test-contentbox{
   background-color: #cccc9b;
@@ -328,9 +328,10 @@ Single-colored icons can be modified like so:
 .navbar, .navbar-inverse {
     border-radius: 0;
     color: black;
+    font-size: 10px;
     border: none;
     margin-bottom: 0;
-    min-height: 80px;
+    min-height:40px;
 }
 
 .nav li {
@@ -346,7 +347,7 @@ Single-colored icons can be modified like so:
     font-family: Lato;
     font-size: 1.7em;
     font-weight: 300;
-    padding: 30px 25px 33px 25px;
+    padding: 20px 5px 23px 5px;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
@@ -364,9 +365,9 @@ Single-colored icons can be modified like so:
 }
 @media only screen and (max-width: 768px) {
   body{
-    background-color:#ebf0d9;
+    background-color:white;  /*#ebf0d9 for the beige*/
     .articles-tittle{
-      font-size: 10px;
+      font-size: 12px;
       color: red;
     }
   }
