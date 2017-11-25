@@ -352,6 +352,12 @@ Single-colored icons can be modified like so:
 .bg-color-black{
   background-color:black;
 }
+.foot-padding{
+  padding:50px 20px;
+}
+.bg-gray{
+  background-color: gray;
+}
 .navbar, .navbar-inverse {
     border-radius: 0;
     color: black;
@@ -399,7 +405,7 @@ Single-colored icons can be modified like so:
     }
   }
   .bg-color-white{
-    background-color:#ebf0d9;
+    background-color:white;/*#ebf0d9;*/
   }
   .image2 {
     position: absolute;
