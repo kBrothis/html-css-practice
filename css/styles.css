@@ -1,0 +1,155 @@
+/* include Google Web fonts: */
+@import url('https://fonts.googleapis.com/css?family=Meie+Script');
+/*@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);*/
+/*@import url(https://fonts.googleapis.com/css?family=Lato);*/
+
+
+.font_meie_script {
+  font-family: 'Meie Script', cursive;
+}
+
+h1 {
+font-family: Meie Script;
+font-size: 100pt;
+font-weight: 600;
+text-decoration: underline;
+text-align: center;
+}
+
+h6 {
+font-style: italic;
+text-align: center;
+font-weight: bold;
+}
+
+h6:before,
+h6:after {
+background-color: #690;  /*green*/
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 20%;
+}
+h6:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h6:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+}
+.header-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+    /*background-color: transparent;*/
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    /*background-color: transparent;
+    border: none;
+    box-shadow: none;*/
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+.grapes{
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  /*padding: 3px;*/
+  /*background-image: url(http://maxpixel.freegreatpicture.com/static/photo/1x/Harvest-Bunch-Fruit-Holding-Ripe-Person-Grapes-690230.jpg);*/
+  background-image: url(../images/Harvest-Bunch-Fruit-Holding-Ripe-Person-Grapes-690230.jpg);
+  border: 1px solid black;
+  background-size: 100% 100%;
+}
