@@ -1,4 +1,4 @@
-/* remove all decoration caused by mouse */
+/* remove all decoration caused by mouse, links, etc. */
 
 [class^="icon-"]:visited,[class^="icon-"]:hover, [class^="icon-"]:active, a, a:link, a:visited, a:hover, a:active{
   color: white;
@@ -44,7 +44,6 @@ iframe {height: 480px;}
   box-shadow: 2px 0px 20px  rgba(256,256,256,.6), 2px 0px 20px  rgba(6, 14, 62, 0.79);
 }
 
-
 /*aside */
 .aside-box {
   padding-top: 10px;
@@ -52,7 +51,6 @@ iframe {height: 480px;}
   margin: 25px auto;
   max-width: 350px;
 }
-
 
 .aside-box img{
   max-width: 200px;
@@ -65,7 +63,6 @@ iframe {height: 480px;}
   overflow: auto;
   margin: 10px auto;
   padding: 10px;
-
 }
 
 .aside > input.form-control {
@@ -90,7 +87,6 @@ iframe {height: 480px;}
   opacity: 1;
 }
 
-
 .follow-box {
   font-size: 1.5em;
 }
@@ -102,7 +98,6 @@ iframe {height: 480px;}
   border-radius: 50%;
   margin-top: 20px;
 }
-
 
 /* navigation */
 .navbar-toggle {
@@ -121,14 +116,12 @@ iframe {height: 480px;}
 .navbar {
   background-color: transparent;
   border-style: none;
-
 }
 ul.nav {
   float: none;
   margin: 0 auto;
   width: 515px;
 }
-
 
 .navbar-default {margin-top: 10px;}
 .navbar-default .navbar-nav > li > a:hover,
@@ -292,6 +285,8 @@ span.bullet {
   bottom: 30px;
   right: 10px;
 }
+
+.post-navigator { color:#fff;}
 
 /*media quieries*/
 
