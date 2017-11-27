@@ -192,6 +192,7 @@ nav li{
   height: 40px;
   border: 1px solid #c30a0a;
   background-color: #c30a0a;
+  color: white;
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   -ms-transition: all .25s ease;
@@ -658,5 +659,19 @@ footer{
   .cont-foot button{
     width: 70%;
     margin-top: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1{
+    font-size: 4em;
+  }
+
+  .logo h3{
+    letter-spacing: 20px;
+  }
+
+  .hero-article i{
+    font-size: 1.6em;
   }
 }
