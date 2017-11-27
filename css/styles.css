@@ -4,7 +4,7 @@ body {
 header footer {
     margin:20px;
 }
-
+/*header stuff*/
 .icon {
     font-family: "icomoon";
 }
@@ -22,6 +22,8 @@ header footer {
 .logo-top {
     margin-bottom: 20px;
 }
+
+/*interests windows*/
 .sw-image {
     width:100%;
 }
@@ -51,7 +53,7 @@ header footer {
     width: 150px;
     float:left;
 }
-
+/*video embed stuff*/
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -67,6 +69,7 @@ header footer {
 	width:100%;
 	height:100%;
 }
+/*interests section*/
 .title { 
     text-align: center;
 }
@@ -105,6 +108,7 @@ header footer {
     text-align: center;
     height: 20px;
 }
+/*hide social media icons when small*/
 @media (max-width: 768px) {
     .article-icon {
         display: none;
@@ -114,7 +118,7 @@ header footer {
         padding: 2px;
     }
 }
-
+/*sidebar stuff*/
 .aboutme, .follow, .subscribe, .recentposts{
     border-bottom: 1px solid #000000;
     margin-bottom: 20px;
@@ -125,6 +129,13 @@ header footer {
     background-color: #ffffff;
     margin: 10%;
 }
-.image7 { 
+.me-image { 
     border-radius: 50%;
+}
+.search {
+    margin: 20px;
+}
+.submitbutton {
+    height:150 px;
+    width: 250px;
 }
