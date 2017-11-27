@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="icomoon\style.css">
   <link rel="icon" type="image/png" href="resources/img/icon-peace.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
   <div class="container bg-dark">
@@ -30,10 +31,17 @@
                 <li><a href="javascript:void(0);">Page 1-2</a></li>
               </ul>
             </li>
-            <li><a href="javascript:void(0);">Demos</a></li>
-            <li><a href="javascript:void(0);">Portfolio</a></li>
-            <li><a href="javascript:void(0);">Blog</a></li>
-            <li><a href="javascript:void(0);">Calendar</a></li>
+            <li><a href="javascript:void(0);">Demos
+            </a></li>
+            <li><a href="javascript:void(0);">Portfolio
+            </a></li>
+            <li><a href="javascript:void(0);">Blog
+            </a></li>
+            <li><a href="javascript:void(0);">Calendar
+            </a></li>
+            <li><a href="javascript:void(0);">
+              <span class="icon-search"></span>
+            </a></li>
           </ul>
         </div>
       </div>
@@ -111,8 +119,7 @@
         </div>
       </div>
     </div> <!-- end carousel -->
-
-    <div class="row">
+    <div class="row top-box-row">
       <div class="top-box bg-dark col-sm-12 col-md-4">
         <img src="resources\img\orion.jpeg" alt="">
       </div>
@@ -123,8 +130,6 @@
         <img src="resources\img\heli.jpeg" alt="">
       </div>
     </div>
-
-
     <main class="row">
       <!-- NOTE: multiple instances of very similar ideas -->
       <div class="col-sm-12 col-md-8">
@@ -358,15 +363,15 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               </p>
             </span>
-            </div>
           </div>
+        </div>
         <div class="aside-box">
           <div class="aside-box aside-txt">
             <div class="strike">
               <span>Follow</span>
             </div>
             <span class="follow-box">
-            <span>
+              <span>
                 <a href="javascript:void(0);"><span class="icon-facebook2 shadow"></span></a>
                 <a href="javascript:void(0);"><span class="icon-twitter shadow"></span></a>
                 <a href="javascript:void(0);"><span class="icon-camera shadow"></span></a>
@@ -390,24 +395,24 @@
                 Lorem ipsum dolor sit amet, id mei nisl sadipscing, nobis noluisse cu eum.Lorem ipsum dolor sit amet, id mei nisl sadipscing, nobis noluisse cu eum.Lorem ipsum dolor sit amet, id mei nisl sadipscing, nobis noluisse cu eum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               </p>
             </span>
-            </div>
           </div>
+        </div>
 
-          <div class="aside-box bg-dark">
-            <div class="strike">
-              <span>Sign Up</span>
-            </div>
-            <div class="follow-box">
-              <p>Subscribe now to recieve daily updates...</p>
-              <form action="/action_page.php">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Enter your e-mail here..." name="email">
-                  <div class="input-group-btn">
-                    <button class="btn btn-inverse" type="submit"><span class="icon-circle-right"></span></button>
-                  </div>
+        <div class="aside-box bg-dark">
+          <div class="strike">
+            <span>Sign Up</span>
+          </div>
+          <div class="follow-box">
+            <p>Subscribe now to recieve daily updates...</p>
+            <form action="/action_page.php">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter your e-mail here..." name="email">
+                <div class="input-group-btn">
+                  <button class="btn btn-inverse" type="submit"><span class="icon-circle-right"></span></button>
                 </div>
               </div>
             </div>
+          </div>
         </aside>
       </main>
       <div class="row bg-dark subscription">
@@ -428,7 +433,7 @@
           </form>
         </div>
         <div class="col-md-4 to-top">
-          <a href=#><span class="icon-circle-up"></span></a>
+          <a href=#><span id="to-top" class="icon-circle-up"></span></a>
         </div>
       </div> <!-- end subscribe row -->
       <div class="row"> <!-- instagram row-->
@@ -441,7 +446,19 @@
       </footer>
     </div> <!-- end bs main container -->
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  window.onscroll = function(){
 
-  </html>
+    if ( document.documentElement.scrollTop > 1000) {
+      document.getElementById("to-top").style.display = "block";
+    } else {
+      document.getElementById("to-top").style.display = "none";
+    }
+  };
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</html>

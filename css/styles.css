@@ -19,6 +19,7 @@ li  {
 
 ul {padding: 5px;}
 
+
 main footer {
   background-color: #8e9091;
   margin: auto;
@@ -34,7 +35,7 @@ iframe {height: 480px;}
 
 /* background */
 .bg-transparent {
-background-color: transparent;
+  background-color: transparent;
 }
 .bg-dark {
   background-color: rgba(0,0,0,.85);
@@ -54,7 +55,7 @@ background-color: transparent;
 
 
 .aside-box img{
-    max-width: 200px;
+  max-width: 200px;
 }
 
 .follow-box .aside-box-text p {
@@ -119,11 +120,15 @@ background-color: transparent;
 }
 .navbar {
   background-color: transparent;
-  border-radius: 0;
   border-style: none;
-  margin-left: 28%;
-  padding-top: 25px;
+
 }
+ul.nav {
+  float: none;
+  margin: 0 auto;
+  width: 515px;
+}
+
 
 .navbar-default {margin-top: 10px;}
 .navbar-default .navbar-nav > li > a:hover,
@@ -281,15 +286,24 @@ span.bullet {
   max-width: 100%;
 }
 
+.icon-circle-up {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+}
 
 /*media quieries*/
 
 @media (max-width: 992px) {
 
-  .navbar-default {border-radius: 10px;}
 
-   aside, date, .arrow-box {
+  .navbar-default .navbar-collapse {border-style: none;}
+
+  aside, date, .arrow-box, .navbar-nav .icon-search {
     display: none;
+    overflow: hidden;
+
   }
   .main-text  {
     height: 200px;
@@ -297,10 +311,10 @@ span.bullet {
   }
 
   .navbar {margin-left: inherit;}
-
   .navbar-default {padding-top: 0;}
-
+  ul.nav {width:auto;}
   .tag-rule {width:20%;}
+
   main footer {
     background-color: transparent;
   }
@@ -325,8 +339,8 @@ span.bullet {
 }
 
 .icon-search{
-  font-size: 2em;
-  float: right;
+  font-size: 1.5em;
+  /*float: right;*/
   padding-top: 10px;
 }
 div.icons { margin: 15px 0 0 0; }

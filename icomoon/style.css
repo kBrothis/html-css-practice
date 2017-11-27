@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?xkw5zz');
-  src:  url('fonts/icomoon.eot?xkw5zz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?xkw5zz') format('truetype'),
-    url('fonts/icomoon.woff?xkw5zz') format('woff'),
-    url('fonts/icomoon.svg?xkw5zz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?gam22z');
+  src:  url('fonts/icomoon.eot?gam22z#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gam22z') format('truetype'),
+    url('fonts/icomoon.woff?gam22z') format('woff'),
+    url('fonts/icomoon.svg?gam22z#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,11 +27,11 @@
 .icon-camera:before {
   content: "\e90f";
 }
-.icon-music:before {
-  content: "\e911";
-}
 .icon-calendar:before {
   content: "\e953";
+}
+.icon-search:before {
+  content: "\e986";
 }
 .icon-menu:before {
   content: "\e9bd";
