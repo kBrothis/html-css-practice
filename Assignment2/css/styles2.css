@@ -1,0 +1,362 @@
+/*fonts*/
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/Q_Z9mv4hySLTMoMjnk_rCfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Mr Dafoe';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mr Dafoe Regular'), local('MrDafoe-Regular'), url(https://fonts.gstatic.com/s/mrdafoe/v6/uZ97Ol8ozFq27olhOMuMCPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Homemade Apple';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Homemade Apple Regular'), local('HomemadeApple-Regular'), url(https://fonts.gstatic.com/s/homemadeapple/v8/yg3UMEsefgZ8IHz_ryz86IpVThvdH1ZERIrfWb3R7t4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*General Styling*/
+body {
+  text-align: center;
+}
+.fa {
+  padding: 8px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+.fa:hover {
+    opacity: 0.7;
+    background-color: #4dabd9;
+    color: #fff;
+}
+
+/*container*/
+.container {
+  /*background-image: url(http://moziru.com/images/wallpaper-clipart-snow-5.jpg);*/
+ background-image: url(https://78.media.tumblr.com/baaad1dce9bdc7747104604d6ceb5a48/tumblr_inline_nn2bzuzDLr1r1u2bv_500.gif);
+}
+
+/*header*/
+.header-col {
+  font-family: 'Mr Dafoe', 'Pacifico', sans-serif;
+  color: #fff;
+}
+.header-col h1 {
+  font-size: 85px;
+  margin: 10px 0 0 0;
+}
+.header-col h2 {
+  font-size: 15px;
+  margin: 15px 0 0 0;
+}
+
+/*poster*/
+.poster-col {
+  text-align: center;
+  background-image: url(https://static.pexels.com/photos/60561/winter-snow-nature-60561.jpeg);
+  color: #000;
+  padding: 20px 10px;
+}
+.poster-col h2 {
+  margin: 10px 0;
+}
+.poster-col p {
+  margin: 10px 0;
+}
+.poster-col button {
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background: #4dabd9;
+  color: white;
+  border: 1px solid #4dabd9;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+}
+
+/*links*/
+.links-col-box {
+  background-color: purple;
+  color: white;
+  border: 5px solid #fff;
+  width: 90%;
+  height: 148px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.links-col-box p {
+  color: #fff;
+  background-color: #4dabd9;
+  border-radius: 5px;
+  opacity: 0.7;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.links-col-box img {
+  width: 100%;
+}
+
+/*content*/
+.article {
+  background-image: url(https://static.pexels.com/photos/60561/winter-snow-nature-60561.jpeg);
+  margin: 25px 10px;
+}
+.article-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.article-img img {
+  width: 100%;
+}
+.article-img iframe {
+  width: 100%;
+  border-style: none;
+}
+.article-bottom {
+  background-color: #fff;
+}
+.article-buttons button {
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 10px;
+  background: #4dabd9;
+  color: white;
+  border: 1px solid #4dabd9;
+  border-radius: 5px;
+}
+.article-buttons button:hover {
+  opacity: 0.7;
+}
+.article-bottom button {
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.article-bottom button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.aside-box {
+  color: #000;
+  background-color: #fff;
+  border: 20px solid #fff;
+  width: 90%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.aside-box p {
+  padding: 10px;
+}
+.aside-box img {
+  width: 100%;
+}
+.aside-box button {
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.green-link {
+  color: #2fd113;
+}
+#red-cursive {
+  color: #ff0000;
+  font-family: 'Homemade Apple', sans-serif;
+}
+#aside-field {
+  padding-right: 20px;
+}
+
+/*subscribe*/
+.subscribe-col {
+  /*padding: 20px 0;*/
+  border: 1px solid #3e3e3e;
+  background-color: #3e3e3e;
+}
+.subscribe-col h1 {
+  font-family: 'Mr Dafoe', 'Pacifico', sans-serif;
+  font-size: 85px;
+  color: #fff;
+}
+.subscribe-form {
+  color: #fff;
+  line-height: 25px;
+  text-align: left;
+  font-size: 12px;
+  width: 303px;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+.subscribe-field {
+  border-left:0px;
+  height:31px;
+  padding-right: 40px;
+  padding-left: 5px;
+  border-style: solid;
+  border-color: #fff;
+  margin: 0;
+}
+.subscribe-button {
+  border-style: solid;
+  border-color: green;
+  padding: 1px 10px 1px 5px;
+  background-color: green;
+}
+.to-top-button {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  border-style: solid;
+  background: #4dabd9;
+  color: white;
+  border: 1px solid #4dabd9;
+  font-weight: 700;
+  opacity: 0.6;
+  margin: 15px 0;
+}
+.to-top-button:hover {
+  opacity: 1.0;
+}
+
+/*instagram*/
+.instagram-col {
+  background-image: url(https://static.pexels.com/photos/60561/winter-snow-nature-60561.jpeg);
+}
+.instagram-button {
+  border-style: solid;
+  border-color: green;
+  padding: 10px 20px;
+  background-color: green;
+  color: #fff;
+  margin: 20px 0;
+}
+
+/*footer*/
+.footer-col {
+  background-color: #3e3e3e;
+  color: #fff;
+  padding: 10px 10px;
+}
+.footer-col p {
+  opacity: 0.5;
+}
+
+/*media queries*/
+@media (min-width: 769px) {
+  /*general*/
+  body {
+    background-color: #000;
+  }
+  /*second-container*/
+  /*.second-container {
+    margin: 0 80px;
+  }*/
+  /*header*/
+  .header-col {
+    padding: 40px 0;
+  }
+  /*poster*/
+  .poster-col {
+    padding: 80px 0;
+  }
+  /*links*/
+  .links-col {
+    padding: 25px 0;
+  }
+  /*content*/
+  .article-img {
+    height: 325px;
+  }
+  .article-img iframe {
+    width: 100%;
+    height: 325px;
+  }
+  .bottom-element {
+    display: inline-block;
+  }
+  .article-media {
+    margin: 0 50px;
+  }
+  /*subscribe*/
+  .subscribe-col {
+    height: 200px;
+  }
+  .subscribe-col h1 {
+    margin-top: 50px;
+  }
+  .subscribe-col label {
+    margin-top: 70px;
+  }
+  .subscribe-col button {
+    margin-top: 70px;
+  }
+  /*instagram*/
+  .instagram button {
+    margin: 120px 0;
+  }
+  /*footer*/
+
+}
+
+@media (max-width: 768px) {
+
+  /*header*/
+  .header-col {
+    padding: 10px 0;
+  }
+  /*poster*/
+  /*links*/
+  /*content*/
+  .article-img iframe {
+    height: 180px;
+  }
+  .article-media {
+    display: none;
+  }
+  .article-bottom button {
+    margin: 3px;
+  }
+  .asides {
+    display: none;
+  }
+  /*subscribe*/
+  /*instagram*/
+  /*footer*/
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .article-media {
+    display: none;
+  }
+  .asides {
+    display: none;
+  }
+}
