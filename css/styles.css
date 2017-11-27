@@ -416,6 +416,12 @@ Single-colored icons can be modified like so:
   h5{
     border-bottom: 0;
   }
+  .articles-border {
+      margin-left: 0;
+  }
+  .articles-border-right {
+      margin-left: 0;
+  }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -428,6 +434,12 @@ Single-colored icons can be modified like so:
   }
   h5{
     border-bottom: 0;
+  }
+  .articles-border {
+      margin-left: 0;
+  }
+  .articles-border-right {
+      margin-left: 0;
   }
 }
 
@@ -442,6 +454,12 @@ Single-colored icons can be modified like so:
   }
   h5{
     border-bottom: 0;
+  }
+  .articles-border {
+      margin-left: 0;
+  }
+  .articles-border-right {
+      margin-left: 0;
   }
 }
 
