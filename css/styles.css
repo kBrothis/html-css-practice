@@ -3,6 +3,33 @@
 /*@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);*/
 /*@import url(https://fonts.googleapis.com/css?family=Lato);*/
 
+body{
+  background-image:url("../images/mybackground.jpg");
+  background-repeat: no-repeat;
+}
+footer{
+  background-color: pink;
+}
+main{
+    background-color: blue;
+}
+aside{
+    background-color: yellow;
+}
+
+.image-main img{
+  max-width: 100%;
+}
+/*paint modify image smaller*/
+.spruce img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.spruce{
+  max-height: 200px;
+}
+
 
 .font_meie_script {
   font-family: 'Meie Script', cursive;
