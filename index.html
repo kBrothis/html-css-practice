@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- test push 3 -->
     <meta charset="utf-8">
     <title>html-css-practice</title>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -10,18 +9,43 @@
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid main-container">
+      <!-- top navbar row-->
+      <div class="row">
+        <div class="col-md-12 top-navbar">
+          <nav class="navbar navbar-default">
+              <ul class="nav navbar-nav">
+                <div class="hamburger">
+                  <li>
+                    <a href="javascript:void(0)">
+                      <div class = "hamburger-short"></div>
+                      <div class = "hamburger-long"></div>
+                      <div class = "hamburger-short"></div>
+                      <div class = "hamburger-long"></div>
+                    </a>
+                  </li>
+                </div>
+                <li><a href="javascript:void(0)">MAIN</a></li>
+                <li><a href="javascript:void(0)">DEMO</a></li>
+                <li><a href="javascript:void(0)">PORTFOLIO</a></li>
+                <li><a href="javascript:void(0);">BLOG</a></li>
+                <li><a href="javascript:void(0);">SHORTCODES</a></li>
+              </ul>
+          </nav>
+        </div>
+      </div>
+
       <header>
         <div class="row">
           <div class="col-md-12">
             <div class="header-social-icons">
                 <ul class="social-icons">
-                    <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-rss"></i></a></li>
                 </ul>
             </div>
           </div>
@@ -29,7 +53,7 @@
 
         <div class="row">
           <div class="col-md-5"></div>
-          <div class="col-md-2">
+          <div class="col-md-2 center">
             <h6>Classical Guitar Instruction</h6>
           </div>
           <div class="col-md-5"></div>
@@ -43,31 +67,40 @@
       </header>
 
       <div class="row guitar-banner">
-        <div class="col-md-12">
-          <img src="images/mybanner.jpg" alt="">
+        <div class="col-md-12 guitar-banner-col">
+            <img src="images/mybanner.jpg" alt="">
+            <div class="caption">
+                <h3>Providing everything you need to learn how to play classical guitar like a pro!</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim tortor at auctor urna. Tempor orci dapibus ultrices in iaculis nunc sed augue.</h4>
+                <a href="javascript:void(0);"><button class="btn btn-join-us" type="submit">Join Us</button></a>
+            </div>
         </div>
       </div>
 
-      <div class="row composers">
+      <div class="row composers center">
         <div class="col-md-4">
           <div class="composer">
               <img src="images/Agustin_Barrios.jpg" alt="">
+              <a href="javascript:void(0);"><button class="btn btn-composer" type="submit">Composers</button></a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="composer">
               <img src="images/Agustin_Barrios.jpg" alt="">
+              <a href="javascript:void(0);"><button class="btn btn-composer" type="submit">Composers</button></a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="composer">
               <img src="images/Agustin_Barrios.jpg" alt="">
+              <a href="javascript:void(0);"><button class="btn btn-composer" type="submit">Composers</button></a>
           </div>
         </div>
       </div>
 
-      <div class="row big-row">
-        <main class="col-md-8 col-sm-12">
+      <div class="row big-row clearfix">
+        <!-- 1st main section -->
+        <main class="col-md-8">
             <div class="row big-image">
               <div class="col-md-12">
                 <div class="image-main">
@@ -75,57 +108,250 @@
                 </div>
               </div>
             </div>
-
             <div class="row main-text">
-              <div class="col-md-12">
-
+              <div class="col-md-12 center">
+                <button class="travel-button">Travel</button>
+                <span class="buttonseparatordot">&bull;</span>
+                <button class="travel-button">Travel</button>
+                <p>Playfair Display: A new level of new typefaces and fonts that will make you literally glow...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim tortor at auctor urna. Tempor orci dapibus ultrices in iaculis nunc sed augue. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Dictum sit amet justo donec enim diam. Erat nam at lectus urna duis convallis convallis tellus. Quam quisque id diam vel quam elementum. Risus nullam eget felis eget. Eget mi proin sed libero enim.</p>
               </div>
             </div>
-
-            <div class="row main-footer">
-              <div class="col-md-4">
-
+            <div class="row main-footer small-border">
+              <div class="col-md-4 center small-border-col">
+                <span class="footer-date small-border">April 29, 2014</span>
               </div>
               <div class="col-md-4">
                 <div class="header-social-icons">
                     <ul class="social-icons">
-                        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                        <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-                        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-rss"></i></a></li>
                     </ul>
                 </div>
               </div>
-              <div class="col-md-4">
-
+              <div class="col-md-4 center small-border-col">
+                <button class="read-more">Read More</button>
+                <button class = "button-greater-than">></button>
               </div>
             </div>
         </main>
-
         <aside class="col-md-4">
             <img src="images/guitarplayer.jpg" alt="">
+            <div class="header-social-icons">
+                <ul class="social-icons">
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div>
         </aside>
+        <div class="row main-separator">
+          <div class="col-md-12"></div>
+        </div>
+
+        <!-- 2nd main section (video) -->
+        <main class="col-md-8">
+            <div class="row big-image">
+              <div class="col-md-12">
+                <div class="image-main">
+                  <iframe class = "video" src="https://www.youtube.com/embed/4y0IRxndBSg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="row main-text">
+              <div class="col-md-12 center">
+                <button class="travel-button">Travel</button>
+                <span class="buttonseparatordot">&bull;</span>
+                <button class="travel-button">Travel</button>
+                <p>Playfair Display: A new level of new typefaces and fonts that will make you literally glow...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim tortor at auctor urna. Tempor orci dapibus ultrices in iaculis nunc sed augue. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Dictum sit amet justo donec enim diam. Erat nam at lectus urna duis convallis convallis tellus. Quam quisque id diam vel quam elementum. Risus nullam eget felis eget. Eget mi proin sed libero enim.</p>
+              </div>
+            </div>
+            <div class="row main-footer small-border">
+              <div class="col-md-4 center small-border-col">
+                <span class="footer-date small-border">April 29, 2014</span>
+              </div>
+              <div class="col-md-4">
+                <div class="header-social-icons">
+                    <ul class="social-icons">
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-md-4 center small-border-col">
+                <button class="read-more">Read More</button>
+                <button class = "button-greater-than">></button>
+              </div>
+            </div>
+        </main>
+        <aside class="col-md-4">
+            <img src="images/guitarplayersittingposition.jpg" alt="">
+            <div class="header-social-icons">
+                <ul class="social-icons">
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="row main-separator">
+          <div class="col-md-12"></div>
+        </div>
+
+        <!-- 3rd main section  -->
+        <main class="col-md-8">
+            <div class="row big-image">
+              <div class="col-md-12">
+                <div class="image-main">
+                  <img src="images/guitars-ziricote-cutaway.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="row main-text">
+              <div class="col-md-12 center">
+                <button class="travel-button">Travel</button>
+                <span class="buttonseparatordot">&bull;</span>
+                <button class="travel-button">Travel</button>
+                <p>Playfair Display: A new level of new typefaces and fonts that will make you literally glow...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim tortor at auctor urna. Tempor orci dapibus ultrices in iaculis nunc sed augue. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Dictum sit amet justo donec enim diam. Erat nam at lectus urna duis convallis convallis tellus. Quam quisque id diam vel quam elementum. Risus nullam eget felis eget. Eget mi proin sed libero enim.</p>
+              </div>
+            </div>
+            <div class="row main-footer small-border">
+              <div class="col-md-4 center small-border-col">
+                <span class="footer-date small-border">April 29, 2014</span>
+              </div>
+              <div class="col-md-4">
+                <div class="header-social-icons">
+                    <ul class="social-icons">
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-md-4 center small-border-col">
+                <button class="read-more">Read More</button>
+                <button class = "button-greater-than">></button>
+              </div>
+            </div>
+        </main>
+        <aside class="col-md-4">
+            <img src="images/johnwilliams3.jpg" alt="">
+            <div class="header-social-icons">
+                <ul class="social-icons">
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="row main-separator">
+          <div class="col-md-12"></div>
+        </div>
+
+        <!-- 4th main section(last)  col-sm-12-->
+        <main class="col-md-8">
+            <div class="row big-image">
+              <div class="col-md-12">
+                <div class="image-main">
+                  <img src="images/guitars-macassar-zorro.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="row main-text">
+              <div class="col-md-12 center">
+                <button class="travel-button">Travel</button>
+                <span class="buttonseparatordot">&bull;</span>
+                <button class="travel-button">Travel</button>
+                <p>Playfair Display: A new level of new typefaces and fonts that will make you literally glow...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim tortor at auctor urna. Tempor orci dapibus ultrices in iaculis nunc sed augue. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Dictum sit amet justo donec enim diam. Erat nam at lectus urna duis convallis convallis tellus. Quam quisque id diam vel quam elementum. Risus nullam eget felis eget. Eget mi proin sed libero enim.</p>
+              </div>
+            </div>
+            <div class="row main-footer small-border">
+              <div class="col-md-4 center small-border-col">
+                <span class="footer-date small-border">April 29, 2014</span>
+              </div>
+              <div class="col-md-4">
+                <div class="header-social-icons">
+                    <ul class="social-icons">
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="javascript:void(0)" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-md-4 center small-border-col">
+                <button class="read-more">Read More</button>
+                <button class = "button-greater-than">></button>
+              </div>
+            </div>
+        </main>
+        <!-- no sidbar after last section -->
       </div>
 
-      <footer class="row">
-        <div class="col-md-4">
-
+      <div class="row older-newer-post">
+        <div class="col-md-8 center">
+            <h2>Older Posts >></h2>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4"></div>
+      </div>
 
+      <footer class="row my-footer">
+        <div class="col-md-4 border-right">
+          <h5>Guitar Academy</h5>
         </div>
-        <div class="col-md-4">
-
+        <div class="col-md-4 border-right">
+          <p class="subscribe">Subscribe now and recieve daily updates.</p>
+          <div class = "input-group center clearfix">
+            <input type = "text" class = "form-control" placeholder="Enter your email here">
+            <span class = "input-group-addon">Subscribe</span>
+          </div>
+        </div>
+        <div class="col-md-4 scroll-top">
+          <a href="#"><i class="fa fa-chevron-circle-up"></i></a>
+          <!-- "#" scrolls you to the TOP of the page while "javascript:void(0);" does not. -->
         </div>
       </footer>
 
-      <div class="row">
-      </div>
-      <div class="row">
+      <div class="row instagram-feed center">
+        <div class="col-md-12 instagram-col">
+          <img src="images/banner-coloradomountains3.jpg" alt="">
+          <div class="caption">
+            <a href="javascript:void(0);"><button class="btn btn-instagram-feed" type="submit">Instagram Feed</button></a>
+          </div>
+        </div>
       </div>
 
-    </div><!-- container div-->
+      <div class="row copyright">
+        <div class="col-md-12 center copyright-col">
+          <p><b><i><small>&copy; 2017 All rights reserved. Designed and Developed by Brett Strawn.</small></i></b></p>
+        </div>
+      </div>
+
+    </div><!--main container div-->
   </body>
 </html>

@@ -1,81 +1,59 @@
-/* include Google Web fonts: */
-@import url('https://fonts.googleapis.com/css?family=Meie+Script');
+@import url('https://fonts.googleapis.com/css?family=Meie+Script'); /* include Google Web fonts: */
 
 body{
   background-image:url("../images/mybackground.jpg");
-  background-repeat: no-repeat;
-}
-footer{
-  background-color: pink;
+  background-repeat: repeat;
 }
 main{
-    background-color: blue;
+  float: left;
+  background-color: black;
+  color: white;
+  opacity: .9;
+  width: 50%;
+  margin-left: 65px;
 }
-
 aside{
-    background-color: yellow;
-
+  float: right;
+  max-width: 25%;
 }
-img{
-  width: 100%;
-  height: 90%;
-}
-
-.big-row{
-  margin-top:15px;
-}
-.image-main img{
-  max-width: 100%;
-}
-.composers{
-  margin-left: 15px;
-}
-.composer img{
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.guitar-banner{
-  max-width: 100%;
-  max-height: 100%;
-  height: 320px;
-  overflow: hidden;
-  margin-left:0;
-  margin-right:0;
-  margin-bottom:15px;
-}
-.composers{
-  max-height: 600px;
-}
-
-.font_meie_script {
-  font-family: 'Meie Script', cursive;
-}
-
 h1 {
-font-family: Meie Script;
-font-size: 100pt;
-font-weight: 600;
-text-decoration: underline;
-text-align: center;
+  font-family: Meie Script;
+  font-size: 100pt;
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: center;
 }
-
-h6 {
-font-style: italic;
-text-align: center;
-font-weight: bold;
-color: white;
+h2 {
+  font-weight: bold;
+  font-size: 16pt;
 }
-
+h3{
+  text-align: center;
+  font-weight: bold;
+}
+h4{
+  text-align: center;
+  font-style: italic;
+}
+h5{
+  font-family: Meie Script;
+  font-size: 30pt;
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: center;
+}
+h6{
+  color: white;
+}
 h6:before,
 h6:after {
-background-color: #690;  /*green*/
- content: "";
- display: inline-block;
- height: 1px;
- position: relative;
- vertical-align: middle;
- width: 20%;
+  background-color: #690;  /*green*/
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 20%;
 }
 h6:before {
  right: 0.5em;
@@ -87,14 +65,217 @@ h6:after {
 }
 
 ul {
-    padding:0;
-    list-style: none;
+  padding:0;
+  list-style: none;
 }
+
+img{
+  width: 100%;
+  height: 90%;
+}
+
+.font_meie_script {
+  font-family: 'Meie Script', cursive;
+}
+.center{
+  text-align: center;
+}
+.main-container{
+  padding:0;
+}
+.top-navbar{
+  padding: 0px;
+}
+.nav.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50px;
+}
+.navbar-nav {
+  float: none;
+}
+.hamburger{
+  margin: 15px 80px;
+}
+.hamburger-short{
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+  width: 15px;
+}
+.hamburger-long{
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+  width: 25px;
+}
+
+.travel-button{
+  background-color: white;
+  color:  #4CAF50; /* Green */
+  border: 2px solid #4CAF50;
+  margin: 10px auto;
+  border-radius: 3px;
+}
+.button-greater-than{
+  background-color: #4CAF50; /* Green */
+  padding: 3px 3px;
+  margin: 0px;
+  border: none;
+}
+.read-more{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding:2px 4px;
+}
+
+.small-border{
+  border: 1px solid white;
+  padding: 5px;
+}
+.small-border-col{
+  margin-top: 17px;
+}
+.main-separator{
+  margin: 30px auto;
+}
+
+.video{
+  width: 100%;
+  height: 480px;
+}
+.big-row{
+  margin-top:15px;
+}
+.image-main {
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.caption {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ .caption h3, h4{
+  color: white;
+  margin: 10px;
+  padding: 15px;
+ }
+ .guitar-banner-col{
+   padding: 0px;
+   height: 350px;
+ }
+ .btn{
+   background-color: #4CAF50;
+   color: white;
+   border: solid #4CAF50;
+   margin: 10px auto;
+   left: 46%;
+ }
+.btn-composer{
+  background-color: white;
+  color: black;
+  border: solid black;
+  margin: 10px auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-join-us{
+  position: absolute;
+}
+.btn-instagram-feed{
+  margin-top: 50px;
+}
+.composers{
+  margin-bottom: 40px;
+}
+.composer img{
+  height: auto;
+  width: auto;
+  max-width: 600px;
+  max-height: 600px;
+}
+.older-newer-post{
+  background-color: transparent;
+  text-align: center;
+  color: black;
+  margin-left: 85px;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+.my-footer{
+  background-color: white;
+  border-right: 1px grey;
+  height: 150px;
+  padding-top: 50px;
+}
+.border-right{
+  border-right: 1px grey;
+  padding-right:20px;
+  border-right: 1px solid #ccc;
+}
+.scroll-top{
+  text-align: center;
+}
+.input-group-addon{
+  background-color: #4CAF50;
+  color: white;
+  margin: 10px auto;
+}
+.subscribe{
+  text-align: center;
+}
+.input-group{
+  max-width: 600px;
+  margin: 0 auto;
+}
+.instagram-feed{
+  background-color: white;
+}
+.instagram-col{
+  padding: 0px;
+}
+.copyright{
+  background-color: white;
+}
+.copyright-col{
+  padding: 0px;
+  margin: 15px auto;
+}
+
+@media (max-width : 1024px) {
+  aside{
+    display: none;
+  }
+  .composers{
+    display: none;
+  }
+  .guitar-banner-col{
+    height: 450px;
+  }
+  main{
+    width: 88%;
+    margin-right: 65px;
+  }
+}
+@media (max-width : 768px) {
+  .guitar-banner-col{
+    height: 550px;
+    margin: 0 auto;
+  }
+}
+
 .header-social-icons {
-    width: 350px;
+    width: 255px;
     display:block;
     margin: 0 auto;
-    text-align: center;
 }
 .social-icon {
     color: #fff;
@@ -106,14 +287,10 @@ ul.social-icons {
     vertical-align: top;
     display: inline;
     height: 100px;
-    /*background-color: transparent;*/
 }
 .social-icons a {
     color: #fff;
     text-decoration: none;
-    /*background-color: transparent;
-    border: none;
-    box-shadow: none;*/
 }
 .fa-facebook {
     padding:10px 14px;
@@ -186,4 +363,9 @@ ul.social-icons {
 }
 .fa-google-plus:hover {
     background-color: #e25714;
+}
+
+.fa.fa-chevron-circle-up{
+  font-size: 64px;
+  color: #ccc;
 }
